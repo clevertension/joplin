@@ -110,6 +110,7 @@ It still requires you to quit the application each time you want it to rebuild, 
 Please read for the [Build Troubleshooting Document](https://github.com/laurent22/joplin/blob/dev/readme/build_troubleshooting.md) for various tips on how to get the build working.
 
 # Write your code
+
 when you change your code, you should build typscript and po
 install translatetoolkit first
 ```
@@ -123,3 +124,24 @@ node packages/tools/build-translation.js
 ```
 # Add Locales
 you should add your locale text in zh_CN.po, and it will generate zh_CN.json
+
+# build dmg
+Build Notice
+should use node14+, 14.18.0
+in packages/app-desktop
+```
+npm run dist
+```
+# build android
+in packages/app-mobile/android 
+```
+./gradlew assembleRelease -PbuildDir=build -PJOPLIN_RELEASE_STORE_FILE=debug.keystore -PJOPLIN_RELEASE_STORE_PASSWORD=android -PJOPLIN_RELEASE_KEY_ALIAS=androiddebugkey -PJOPLIN_RELEASE_KEY_PASSWORD=android
+```
+
+# Trouble
+Cannot find module 'fs/promises'
+
+please delete node_modules/ and package-lock.json, 
+```
+npm clean-install
+```
