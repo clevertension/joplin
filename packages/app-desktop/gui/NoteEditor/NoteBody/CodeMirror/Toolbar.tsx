@@ -41,6 +41,7 @@ const mapStateToProps = (state: AppState) => {
 		'-',
 		'textBold',
 		'textItalic',
+		'textSummaryDetail',
 		'-',
 		'textLink',
 		'textCode',

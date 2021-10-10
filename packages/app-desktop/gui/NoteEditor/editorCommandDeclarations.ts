@@ -39,6 +39,11 @@ const declarations: CommandDeclaration[] = [
 		iconName: 'icon-italic',
 	},
 	{
+		name: 'textSummaryDetail',
+		label: () => _('Summary Detail'),
+		iconName: 'fas fa-eye-slash',
+	},
+	{
 		name: 'textLink',
 		label: () => _('Hyperlink'),
 		iconName: 'icon-link',

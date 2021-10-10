@@ -26,6 +26,7 @@ export default function() {
 		'textCopy',
 		'textCut',
 		'textItalic',
+		'textSummaryDetail',
 		'textLink',
 		'textPaste',
 		'textSelectAll',

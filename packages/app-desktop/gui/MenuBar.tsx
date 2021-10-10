@@ -556,6 +556,7 @@ function useMenu(props: Props) {
 						menuItemDic.textItalic,
 						menuItemDic.textLink,
 						menuItemDic.textCode,
+						menuItemDic.textSummaryDetail,
 						separator(),
 						menuItemDic.insertDateTime,
 						menuItemDic.attachFile,

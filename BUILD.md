@@ -108,3 +108,18 @@ It still requires you to quit the application each time you want it to rebuild, 
 # Troubleshooting
 
 Please read for the [Build Troubleshooting Document](https://github.com/laurent22/joplin/blob/dev/readme/build_troubleshooting.md) for various tips on how to get the build working.
+
+# Write your code
+when you change your code, you should build typscript and po
+install translatetoolkit first
+```
+brew install translate-toolkit
+npm run buildTranslations
+```
+the command equals the following two separate comand, you can execute it one by one if meet error
+```
+npm run tsc
+node packages/tools/build-translation.js
+```
+# Add Locales
+you should add your locale text in zh_CN.po, and it will generate zh_CN.json

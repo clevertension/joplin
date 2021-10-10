@@ -37,6 +37,20 @@ import ErrorBoundary from '../../../ErrorBoundary';
 import { MarkupToHtmlOptions } from '../../utils/useMarkupToHtml';
 
 const menuUtils = new MenuUtils(CommandService.instance());
+const SummaryPrefix = '<details><summary><mark><font color=darkred>..........</font></mark></summary>';
+
+function escapeXml(unsafe: String) {
+	return unsafe.replace(/[<>&'"]/g, c => {
+		switch (c) {
+		case '<': return '&lt;';
+		case '>': return '&gt;';
+		case '&': return '&amp;';
+		case '\'': return '&apos;';
+		case '"': return '&quot;';
+		}
+		return c;
+	});
+}
 
 function markupRenderOptions(override: MarkupToHtmlOptions = null): MarkupToHtmlOptions {
 	return { ...override };
@@ -186,6 +200,13 @@ function CodeMirror(props: NoteBodyEditorProps, ref: any) {
 						},
 						textBold: () => wrapSelectionWithStrings('**', '**', _('strong text')),
 						textItalic: () => wrapSelectionWithStrings('*', '*', _('emphasised text')),
+						textSummaryDetail: async () => {
+							const selections = editorRef.current.getSelections();
+							if (selections.length > 0) {
+								const content = escapeXml(selections[0]);
+								if (content) wrapSelectionWithStrings(SummaryPrefix, `${content}</details>`);
+							}
+						},
 						textLink: async () => {
 							const url = await dialogs.prompt(_('Insert Hyperlink'));
 							editorRef.current.focus();
@@ -392,7 +413,7 @@ function CodeMirror(props: NoteBodyEditorProps, ref: any) {
 		const maxWidthCss = props.contentMaxWidth ? `
 			margin-right: auto !important;
 			margin-left: auto !important;
-			max-width: ${props.contentMaxWidth}px !important;	
+			max-width: ${props.contentMaxWidth}px !important;
 		` : '';
 
 		const element = document.createElement('style');

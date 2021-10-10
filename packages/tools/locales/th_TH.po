@@ -86,7 +86,6 @@ msgid "Missing required argument: %s"
 msgstr ""
 
 #: packages/app-cli/app/cli-utils.js:140
-#: packages/lib/services/ReportService.js:185
 #, javascript-format
 msgid "%s: %s"
 msgstr "%s: %s"
@@ -129,8 +128,6 @@ msgstr "แนบไฟล์ที่ถูกเลือกกับบัน
 #: packages/app-cli/app/command-tag.js:87
 #: packages/app-cli/app/command-todo.js:21
 #: packages/app-cli/app/command-use.js:21
-#: packages/lib/services/interop/InteropService.js:194
-#: packages/lib/services/interop/InteropService.js:206
 #, javascript-format
 msgid "Cannot find \"%s\"."
 msgstr "ไม่พบ \"%s\""
@@ -186,9 +183,10 @@ msgid "Note is not a to-do: \"%s\""
 msgstr ""
 
 #: packages/app-cli/app/command-e2ee.js:29
+#, fuzzy
 msgid ""
 "Manages E2EE configuration. Commands are `enable`, `disable`, `decrypt`, "
-"`status`, `decrypt-file` and `target-status`."
+"`status`, `decrypt-file`, and `target-status`."
 msgstr ""
 "จัดการการตั้งค่า E2EE คำสั่งคือ `enable`, `disable`, `decrypt`, `status`, `decrypt-"
 "file` และ `target-status`"
@@ -228,33 +226,30 @@ msgid "Completed decryption."
 msgstr "ถอดรหัสเรียบร้อยแล้ว"
 
 #: packages/app-cli/app/command-e2ee.js:91
-#: packages/app-mobile/components/screens/encryption-config.js:137
+#: packages/app-mobile/components/screens/encryption-config.js:138
 msgid "Confirm password:"
 msgstr "ยืนยันรหัสผ่าน:"
 
 #: packages/app-cli/app/command-e2ee.js:97
-#: packages/app-mobile/components/screens/encryption-config.js:118
+#: packages/app-mobile/components/screens/encryption-config.js:119
 msgid "Passwords do not match!"
 msgstr "รหัสผ่านไม่เหมือนกัน!"
 
 #: packages/app-cli/app/command-e2ee.js:121
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:443
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:253
-#: packages/app-mobile/components/screens/encryption-config.js:221
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:192
+#: packages/app-mobile/components/screens/encryption-config.js:222
 msgid "Enabled"
 msgstr "เปิด"
 
 #: packages/app-cli/app/command-e2ee.js:121
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:443
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:253
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:192
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:110
-#: packages/app-mobile/components/screens/encryption-config.js:221
-#: packages/lib/models/Setting.js:856
+#: packages/app-mobile/components/screens/encryption-config.js:222
 msgid "Disabled"
 msgstr "ปิด"
 
 #: packages/app-cli/app/command-e2ee.js:121
-#: packages/app-mobile/components/screens/encryption-config.js:221
+#: packages/app-mobile/components/screens/encryption-config.js:222
 #, fuzzy, javascript-format
 msgid "Encryption is: %s"
 msgstr "การเข้ารหัส: %s"
@@ -772,32 +767,31 @@ msgstr "พิมพ์ `joplin help` สำหรับข้อมูลกา
 msgid "Fatal error:"
 msgstr "ผิดพลาดร้ายแรง:"
 
-#: packages/app-desktop/InteropServiceHelper.js:154
+#: packages/app-desktop/InteropServiceHelper.js:162
 #, fuzzy, javascript-format
 msgid "Exporting to \"%s\" as \"%s\" format. Please wait..."
 msgstr "กำลังนำเข้าจาก “%s” ไปเป็นฟอร์แมต “%s” โปรดรอสักครู่..."
 
-#: packages/app-desktop/InteropServiceHelper.js:175
+#: packages/app-desktop/InteropServiceHelper.js:183
 #, javascript-format
 msgid "Could not export notes: %s"
 msgstr ""
 
-#: packages/app-desktop/app.js:158
+#: packages/app-desktop/app.js:160
 #, javascript-format
 msgid "Open %s"
 msgstr "เปิด %s"
 
-#: packages/app-desktop/app.js:160
+#: packages/app-desktop/app.js:162
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:14
 #: packages/app-desktop/gui/MenuBar.js:211
 msgid "Quit"
 msgstr "ออก"
 
-#: packages/app-desktop/bridge.js:106 packages/app-desktop/bridge.js:110
-#: packages/app-desktop/bridge.js:126 packages/app-desktop/bridge.js:134
+#: packages/app-desktop/bridge.js:138 packages/app-desktop/bridge.js:142
+#: packages/app-desktop/bridge.js:158 packages/app-desktop/bridge.js:166
 #: packages/app-desktop/gui/ConfigScreen/ButtonBar.js:22
 #: packages/app-desktop/gui/DialogButtonRow.js:39
-#: packages/app-desktop/gui/DialogButtonRow.min.js:30
 #: packages/app-desktop/gui/MenuBar.js:343
 #: packages/app-desktop/gui/PromptDialog.min.js:235
 #: packages/app-desktop/services/plugins/UserWebviewDialogButtonBar.js:20
@@ -808,11 +802,10 @@ msgstr "ออก"
 msgid "OK"
 msgstr "ตกลง"
 
-#: packages/app-desktop/bridge.js:110 packages/app-desktop/bridge.js:126
+#: packages/app-desktop/bridge.js:142 packages/app-desktop/bridge.js:158
 #: packages/app-desktop/checkForUpdates.js:189
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:528
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:515
 #: packages/app-desktop/gui/DialogButtonRow.js:42
-#: packages/app-desktop/gui/DialogButtonRow.min.js:38
 #: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:52
 #: packages/app-desktop/gui/NoteList/NoteList.js:164
 #: packages/app-desktop/gui/PromptDialog.min.js:242
@@ -826,15 +819,15 @@ msgstr "ตกลง"
 #: packages/app-mobile/components/SelectDateTimeDialog.js:82
 #: packages/app-mobile/components/screens/Note.js:100
 #: packages/app-mobile/components/screens/Note.js:532
-#: packages/app-mobile/components/screens/encryption-config.js:147
+#: packages/app-mobile/components/screens/encryption-config.js:148
 #: packages/app-mobile/components/side-menu-content.js:156
 #: packages/app-mobile/components/side-menu-content.js:165
 #: packages/app-mobile/components/side-menu-content.js:338
-#: packages/lib/shim-init-node.js:167
+#: packages/lib/shim-init-node.js:166
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: packages/app-desktop/bridge.js:184
+#: packages/app-desktop/bridge.js:216
 msgid ""
 "The app is now going to close. Please relaunch it to complete the process."
 msgstr ""
@@ -912,66 +905,54 @@ msgid "Toggle safe mode"
 msgstr "สลับแถบด้านข้าง"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:34
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:40
 msgid "Token has been copied to the clipboard!"
 msgstr "Token ได้ถูกคัดลอกไปที่คลิปบอร์ดแล้ว!"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:37
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:44
 msgid "Are you sure you want to renew the authorisation token?"
 msgstr ""
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:67
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:84
 msgid "The web clipper service is enabled and set to auto-start."
 msgstr ""
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:69
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:91
 #, javascript-format
 msgid "Status: Started on port %d"
 msgstr "สถานะ: เริ่มทำงาน ที่พอร์ต %d"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:72
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:97
 #, javascript-format
 msgid "Status: %s"
 msgstr "สถานะ: %s"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:74
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:103
 msgid "Disable Web Clipper Service"
 msgstr "ปิดบริการ Web Clipper"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:77
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:109
 msgid "The web clipper service is not enabled."
 msgstr ""
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:78
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:114
 msgid "Enable Web Clipper Service"
 msgstr "เปิดใช้บริการ Web Clipper"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:89
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:137
 msgid ""
 "Joplin Web Clipper allows saving web pages and screenshots from your browser "
 "to Joplin."
 msgstr ""
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:90
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:142
 msgid "In order to use the web clipper, you need to do the following:"
 msgstr "ในการที่จะใช้ web clipper คุณจำเป็นต้องทำสิ่งต่อไปนี้:"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:92
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:150
 msgid "Step 1: Enable the clipper service"
 msgstr "ขั้นตอนที่ 1: เปิดใช้บริการ clipper"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:93
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:155
 #, fuzzy
 msgid ""
 "This service allows the browser extension to communicate with Joplin. When "
@@ -982,39 +963,32 @@ msgstr ""
 "ไฟล์วอลล์ของคุณอาจจะต้องการให้คุณอนุญาตสิทธิ์ Joplin ในการเข้าถึงพอร์ตบางพอร์ต"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:96
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:169
 msgid "Step 2: Install the extension"
 msgstr "ขั้นตอนที่ 2: ติดตั้งส่วนเสริม"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:97
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:174
 msgid "Download and install the relevant extension for your browser:"
 msgstr "ดาวน์โหลดและติดตั้งส่วนเสริมที่เกี่ยวข้องสำหรับเว็บเบราว์เซอร์ของคุณ:"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:102
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:189
 msgid "Advanced options"
 msgstr "ตัวเลือกขั้นสูง"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:103
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:194
 msgid "Authorisation token:"
 msgstr "Token สำหรับการขออนุมัติ:"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:108
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:208
 msgid "Copy token"
 msgstr "คัดลอก Token"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:109
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:214
 msgid ""
 "This authorisation token is only needed to allow third-party applications to "
 "access Joplin."
 msgstr "Token สำหรับการขออนุมัตินี้ ใช้เพื่ออนุญาตแอปพลิเคชั่น third-party เพื่อเข้าถึง Joplin"
 
 #: packages/app-desktop/gui/ClipperConfigScreen.js:111
-#: packages/app-desktop/gui/ClipperConfigScreen.min.js:222
 msgid "Renew token"
 msgstr ""
 
@@ -1023,59 +997,57 @@ msgid "Apply"
 msgstr ""
 
 #: packages/app-desktop/gui/ConfigScreen/ButtonBar.js:30
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:528
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:515
 #: packages/app-desktop/gui/NoteRevisionViewer.min.js:187
-#: packages/lib/commands/historyBackward.js:17
 #, fuzzy
 msgid "Back"
 msgstr "กลับ"
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:133
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:120
 msgid "This will open a new screen. Save your current changes?"
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:199
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:186
 #: packages/app-mobile/components/screens/ConfigScreen.js:305
 msgid "Check synchronisation configuration"
 msgstr "ตรวจสอบการตั้งค่าซิงโครไนซ์"
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:209
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:196
 #, fuzzy
 msgid "Show Advanced Settings"
 msgstr "แสดงการตั้งค่าขั้นสูง"
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:398
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:385
 msgid "Path:"
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:403
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:390
 #, fuzzy
 msgid "Browse..."
 msgstr "เปิด..."
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:405
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:392
 msgid "Arguments:"
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:454
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:441
 msgid "The application must be restarted for these changes to take effect."
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:466
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:453
 #: packages/app-desktop/gui/NoteList/NoteList.js:164
 msgid "Do it now"
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:466
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:453
 msgid "Later"
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:519
+#: packages/app-desktop/gui/ConfigScreen/ConfigScreen.js:506
 msgid "Restart now"
 msgstr ""
 
 #: packages/app-desktop/gui/ConfigScreen/Sidebar.js:89
-#: packages/lib/models/Setting.js:1690
 msgid "Plugins"
 msgstr "ปลั๊กอิน"
 
@@ -1115,7 +1087,6 @@ msgstr "กำลังยกเลิก..."
 
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:160
 #: packages/app-desktop/gui/ConfigScreen/controls/plugins/PluginBox.js:162
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:324
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:30
 msgid "Updated"
 msgstr "แก้ไขเมื่อ"
@@ -1170,17 +1141,22 @@ msgstr "ปลั๊กอิน"
 msgid "Manage your plugins"
 msgstr ""
 
-#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:77
+#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:78
 #, fuzzy
 msgid "No results"
 msgstr "ไม่มีทรัพยากร"
 
-#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:89
+#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:93
+#, fuzzy, javascript-format
+msgid "Content provided by %s"
+msgstr "คุณสมบัติของบันทึก"
+
+#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:97
 #: packages/app-desktop/gui/ResourceScreen.js:142
 msgid "Please wait..."
 msgstr "โปรดรอสักครู่..."
 
-#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:89
+#: packages/app-desktop/gui/ConfigScreen/controls/plugins/SearchPlugins.js:97
 #, fuzzy
 msgid "Search for plugins..."
 msgstr "ค้นหา..."
@@ -1195,67 +1171,48 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:96
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:110
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:180
-#: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:50
-#: packages/app-mobile/components/screens/encryption-config.js:96
-#: packages/app-mobile/components/screens/encryption-config.js:167
-msgid "Save"
-msgstr "บันทึก"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:145
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:59
-msgid "Master keys that need upgrading"
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:53
+msgid "Keys that need upgrading"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:150
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:60
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:54
 msgid ""
-"The following master keys use an out-dated encryption algorithm and it is "
-"recommended to upgrade them. The upgraded master key will still be able to "
-"decrypt and encrypt your data as usual."
+"The following keys use an out-dated encryption algorithm and it is "
+"recommended to upgrade them. The upgraded key will still be able to decrypt "
+"and encrypt your data as usual."
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:164
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:309
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:390
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:64
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:145
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:237
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:58
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:139
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:253
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:28
 #: packages/app-desktop/gui/ResourceScreen.js:39
 #, fuzzy
 msgid "ID"
 msgstr "ไอดี"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:169
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:65
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:59
 msgid "Upgrade"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:182
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:74
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:68
 #, fuzzy
 msgid "Re-encrypt data"
 msgstr "เลือกวันที่"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:184
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:75
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:69
 msgid ""
 "The default encryption method has been changed to a more secure one and it "
 "is recommended that you apply it to your data."
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:184
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:75
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:69
 msgid ""
 "You may use the tool below to re-encrypt your data, for example if you know "
 "that some of your notes are encrypted with an obsolete encryption method."
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:186
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:76
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:70
 #, javascript-format
 msgid ""
 "In order to do so, your entire data set will have to be encrypted and "
@@ -1273,192 +1230,161 @@ msgid ""
 "Important: you only need to run this ONCE on one device."
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:198
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:81
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:75
 #, fuzzy
 msgid "Re-encryption"
 msgstr "การเข้ารหัส"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:213
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:85
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:79
 msgid "Ignore"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:244
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:200
-#: packages/app-mobile/components/screens/encryption-config.js:179
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:97
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:214
+#: packages/app-mobile/components/screens/encryption-config.js:89
+#, fuzzy
+msgid "Master password"
+msgstr "ตั้งรหัสผ่าน"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:104
+#: packages/app-desktop/gui/KeymapConfig/ShortcutRecorder.js:50
+#: packages/app-desktop/gui/MasterPasswordDialog/Dialog.js:178
+#: packages/app-mobile/components/screens/encryption-config.js:96
+#: packages/app-mobile/components/screens/encryption-config.js:168
+msgid "Save"
+msgstr "บันทึก"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:112
+#, fuzzy
+msgid "Source: "
+msgstr "ต้นฉบับ"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:115
+#, fuzzy
+msgid "Created: "
+msgstr "สร้างเมื่อ: %s"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:118
+#, fuzzy
+msgid "Updated: "
+msgstr "แก้ไขเมื่อ: %s"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:123
+#, fuzzy
+msgid "Disable"
+msgstr "ปิด"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:123
+#: packages/app-mobile/components/screens/encryption-config.js:144
+msgid "Enable"
+msgstr "เปิด"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:133
+#, fuzzy
+msgid "Encryption Keys"
+msgstr "การเข้ารหัส"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:133
+msgid "Hide disabled keys"
+msgstr ""
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:133
+#, fuzzy
+msgid "Show disabled keys"
+msgstr "แสดงการตั้งค่าขั้นสูง"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:138
+#, fuzzy
+msgid "Active"
+msgstr "การกระทำ"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:140
+msgid "Date"
+msgstr ""
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:141
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:142
+#, fuzzy
+msgid "Valid"
+msgstr "คำสั่งไม่ถูกต้อง: \"%s\""
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:143
+#, fuzzy
+msgid "Actions"
+msgstr "การกระทำ"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:160
+#: packages/app-mobile/components/screens/encryption-config.js:180
 msgid ""
 "Disabling encryption means *all* your notes and attachments are going to be "
 "re-synchronised and sent unencrypted to the sync target. Do you wish to "
 "continue?"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:246
-#: packages/lib/components/EncryptionConfigScreen/utils.js:51
-msgid ""
-"Enabling encryption means *all* your notes and attachments are going to be "
-"re-synchronised and sent encrypted to the sync target. Do not lose the "
-"password as, for security purposes, this will be the *only* way to decrypt "
-"the data! To enable encryption, please enter your password below."
-msgstr ""
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:275
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:218
-#: packages/app-mobile/components/screens/encryption-config.js:210
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:183
+#: packages/app-mobile/components/screens/encryption-config.js:211
 #, fuzzy
 msgid "Disable encryption"
 msgstr "ปิดการเข้ารหัส"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:275
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:218
-#: packages/app-mobile/components/screens/encryption-config.js:210
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:183
+#: packages/app-mobile/components/screens/encryption-config.js:211
 #, fuzzy
 msgid "Enable encryption"
 msgstr "เปิดการเข้ารหัส"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:290
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:139
-msgid "Master Keys"
-msgstr "มาสเตอร์คีย์"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:304
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:144
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:188
 #, fuzzy
-msgid "Active"
-msgstr "การกระทำ"
+msgid "End-to-end encryption"
+msgstr "เปิดการเข้ารหัส"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:314
-msgid "Source"
-msgstr "ต้นฉบับ"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:319
-#: packages/app-desktop/gui/NotePropertiesDialog.min.js:29
-msgid "Created"
-msgstr "สร้างเมื่อ"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:329
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:147
-msgid "Password"
-msgstr "รหัสผ่าน"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:334
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:190
 #, fuzzy
-msgid "Password OK"
-msgstr "รหัสผ่าน"
+msgid "Encryption:"
+msgstr "การเข้ารหัส"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:343
-msgid ""
-"Note: Only one master key is going to be used for encryption (the one marked "
-"as \"active\"). Any of the keys might be used for decryption, depending on "
-"how the notes or notebooks were originally encrypted."
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:194
+msgid "Public-Private Key Pair:"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:371
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:232
-#: packages/app-mobile/components/screens/encryption-config.js:204
-msgid "Missing Master Keys"
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:196
+#, fuzzy
+msgid "Generated"
+msgstr "ทั่วไป"
+
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:196
+msgid "Not generated"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:376
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:233
-#: packages/app-mobile/components/screens/encryption-config.js:205
-msgid ""
-"The master keys with these IDs are used to encrypt some of your items, "
-"however the application does not currently have access to them. It is likely "
-"they will eventually be downloaded via synchronisation."
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:209
+msgid "Your master password is needed to decrypt some of your data."
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:414
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:244
-#: packages/app-mobile/components/screens/encryption-config.js:215
-msgid ""
-"For more information about End-To-End Encryption (E2EE) and advice on how to "
-"enable it please check the documentation:"
-msgstr ""
-"สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการเข้ารหัสแบบ End-To-End Encryption (E2EE) "
-"และคำแนะนำในการเปิดใช้งาน โปรดอ่านคู่มือการใช้งาน:"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:433
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:249
-#: packages/app-mobile/components/screens/encryption-config.js:220
-#: packages/app-mobile/components/screens/status.js:142
-msgid "Status"
-msgstr "สถานะ"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen.min.js:438
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:251
-msgid "Encryption is:"
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:211
+#, javascript-format
+msgid "Please click on \"%s\" to proceed"
 msgstr ""
 
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:103
-#: packages/app-mobile/components/screens/encryption-config.js:89
-#, fuzzy
-msgid "Master password"
-msgstr "ตั้งรหัสผ่าน"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:118
-#, fuzzy
-msgid "Source: "
-msgstr "ต้นฉบับ"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:121
-#, fuzzy
-msgid "Created: "
-msgstr "สร้างเมื่อ: %s"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:124
-#, fuzzy
-msgid "Updated: "
-msgstr "แก้ไขเมื่อ: %s"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:129
-#, fuzzy
-msgid "Disable"
-msgstr "ปิด"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:129
-#: packages/app-mobile/components/screens/encryption-config.js:143
-msgid "Enable"
-msgstr "เปิด"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:139
-msgid "Hide disabled master keys"
-msgstr ""
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:139
-msgid "Show disabled master keys"
-msgstr ""
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:146
-msgid "Date"
-msgstr ""
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:148
-#, fuzzy
-msgid "Valid"
-msgstr "คำสั่งไม่ถูกต้อง: \"%s\""
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:149
-#, fuzzy
-msgid "Actions"
-msgstr "การกระทำ"
-
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:166
-#: packages/app-mobile/components/screens/encryption-config.js:159
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:216
+#: packages/app-mobile/components/screens/encryption-config.js:160
 #, fuzzy
 msgid "Master password:"
 msgstr "ตั้งรหัสผ่าน"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:170
-#: packages/app-mobile/components/screens/encryption-config.js:160
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:248
 #, fuzzy
-msgid "Loaded"
-msgstr "ดาวน์โหลดแล้ว"
+msgid "Missing Keys"
+msgstr "มาสเตอร์คีย์"
 
-#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:178
-#, fuzzy
-msgid "Enter your master password"
-msgstr "ตั้งรหัสผ่าน"
+#: packages/app-desktop/gui/EncryptionConfigScreen/EncryptionConfigScreen.js:249
+msgid ""
+"The keys with these IDs are used to encrypt some of your items, however the "
+"application does not currently have access to them. It is likely they will "
+"eventually be downloaded via synchronisation."
+msgstr ""
 
 #: packages/app-desktop/gui/ExtensionBadge.min.js:10
 msgid "Firefox Extension"
@@ -1479,7 +1405,6 @@ msgid ""
 msgstr ""
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:63
-#: packages/lib/services/KeymapService.js:176
 #, fuzzy, javascript-format
 msgid "Error: %s"
 msgstr "ผิดพลาด"
@@ -1492,7 +1417,7 @@ msgstr "ค้นหา..."
 
 #: packages/app-desktop/gui/KeymapConfig/KeymapConfigScreen.js:121
 #: packages/app-desktop/gui/MenuBar.js:392
-#: packages/app-desktop/gui/MenuBar.js:440 packages/app-desktop/gui/Root.js:163
+#: packages/app-desktop/gui/MenuBar.js:440 packages/app-desktop/gui/Root.js:169
 msgid "Import"
 msgstr "นำเข้า"
 
@@ -1527,13 +1452,13 @@ msgid "Restore"
 msgstr "กู้คืน"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:16
-#: packages/app-desktop/gui/MenuBar.js:540
+#: packages/app-desktop/gui/MenuBar.js:541
 #, fuzzy
 msgid "Actual Size"
 msgstr "ขนาดจริง"
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:18
-#: packages/app-desktop/gui/MenuBar.js:608
+#: packages/app-desktop/gui/MenuBar.js:609
 msgid "Website and documentation"
 msgstr "เว็บไซต์และเอกสารต่างๆ"
 
@@ -1552,7 +1477,7 @@ msgid "Preferences"
 msgstr ""
 
 #: packages/app-desktop/gui/KeymapConfig/utils/getLabel.js:24
-#: packages/app-desktop/gui/MenuBar.js:310 packages/app-desktop/gui/Root.js:164
+#: packages/app-desktop/gui/MenuBar.js:310 packages/app-desktop/gui/Root.js:170
 msgid "Options"
 msgstr "ตัวเลือก"
 
@@ -1561,81 +1486,81 @@ msgstr "ตัวเลือก"
 msgid "Invalid"
 msgstr "คำสั่งไม่ถูกต้อง: \"%s\""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:439
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:450
 msgid ""
 "Safe mode is currently active. Note rendering and all plugins are "
 "temporarily disabled."
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:439
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:450
 msgid "Disable safe mode and restart"
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:442
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:453
 msgid ""
 "The sync target needs to be upgraded before Joplin can sync. The operation "
 "may take a few minutes to complete and the app needs to be restarted. To "
 "proceed please click on the link."
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:442
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:453
 msgid "Restart and upgrade"
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:445
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:456
 #, fuzzy
 msgid "Some items cannot be decrypted."
 msgstr "มีบางรายการที่ไม่สามารถซิงโครไนซ์ได้"
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:445
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:448
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:456
 #: packages/app-desktop/gui/MainScreen/MainScreen.js:459
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:470
 msgid "View them now"
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:448
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:459
 msgid "One of your master keys use an obsolete encryption method."
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:451
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:462
 msgid ""
 "The default encryption method has been changed, you should re-encrypt your "
 "data."
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:451
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:462
 #, fuzzy
 msgid "More info"
 msgstr "ข้อมูลเพิ่มเติม"
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:456
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:467
 #, javascript-format
 msgid "%s (%s) would like to share a notebook with you."
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:456
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:467
 msgid "Accept"
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:456
-#: packages/app-desktop/gui/Root.js:122
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:467
+#: packages/app-desktop/gui/Root.js:128
 msgid "Reject"
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:459
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:470
 #, fuzzy
 msgid "Some items cannot be synchronised."
 msgstr "รายการที่ไม่สามารถทำการซิงโครไนซ์"
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:462
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:473
 msgid "One or more master keys need a password."
 msgstr ""
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:462
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:473
 msgid "Set the password"
 msgstr "ตั้งรหัสผ่าน"
 
-#: packages/app-desktop/gui/MainScreen/MainScreen.js:588
+#: packages/app-desktop/gui/MainScreen/MainScreen.js:599
 msgid "Use the arrows to move the layout items. Press \"Escape\" to exit."
 msgstr ""
 
@@ -1683,7 +1608,7 @@ msgstr "ชื่อสมุดบันทึก:"
 
 #: packages/app-desktop/gui/MainScreen/commands/newNote.js:19
 #: packages/app-mobile/components/action-button.js:86
-#: packages/app-mobile/setUpQuickActions.js:14
+#: packages/app-mobile/setupQuickActions.js:14
 msgid "New note"
 msgstr "สร้างบันทึกใหม่"
 
@@ -1693,7 +1618,7 @@ msgstr "สร้างสมุดบันทึกย่อยใหม่"
 
 #: packages/app-desktop/gui/MainScreen/commands/newTodo.js:17
 #: packages/app-mobile/components/action-button.js:77
-#: packages/app-mobile/setUpQuickActions.js:15
+#: packages/app-mobile/setupQuickActions.js:15
 msgid "New to-do"
 msgstr "สร้าง to-do"
 
@@ -1751,7 +1676,6 @@ msgid "Publish note..."
 msgstr "แบ่งปันบันทึก..."
 
 #: packages/app-desktop/gui/MainScreen/commands/showSpellCheckerMenu.js:19
-#: packages/lib/services/spellChecker/SpellCheckerService.js:180
 msgid "Spell checker"
 msgstr ""
 
@@ -1777,12 +1701,23 @@ msgstr "สลับแถบด้านข้าง"
 msgid "Toggle editor layout"
 msgstr ""
 
+#: packages/app-desktop/gui/MasterPasswordDialog/Dialog.js:177
+#, fuzzy
+msgid "Manager master password"
+msgstr "ตั้งรหัสผ่าน"
+
+#: packages/app-desktop/gui/MasterPasswordDialog/Dialog.js:177
+#: packages/app-desktop/gui/MasterPasswordDialog/Dialog.js:178
+#, fuzzy
+msgid "Reset master password"
+msgstr "ตั้งรหัสผ่าน"
+
 #: packages/app-desktop/gui/MenuBar.js:165
 #, javascript-format
 msgid "Importing from \"%s\" as \"%s\" format. Please wait..."
 msgstr "กำลังนำเข้าจาก “%s” ไปเป็นฟอร์แมต “%s” โปรดรอสักครู่..."
 
-#: packages/app-desktop/gui/MenuBar.js:288 packages/app-desktop/gui/Root.js:166
+#: packages/app-desktop/gui/MenuBar.js:288 packages/app-desktop/gui/Root.js:172
 msgid "Synchronisation Status"
 msgstr "สถานะการซิงโครไนซ์"
 
@@ -1792,7 +1727,7 @@ msgid "Note attachments..."
 msgstr "ไฟล์แนบ"
 
 #: packages/app-desktop/gui/MenuBar.js:343
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:706
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:727
 #: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:13
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:136
 msgid "Copy"
@@ -1800,12 +1735,12 @@ msgstr "คัดลอก"
 
 #: packages/app-desktop/gui/MenuBar.js:354
 #: packages/app-desktop/gui/MenuBar.js:425
-#: packages/app-desktop/gui/MenuBar.js:713
+#: packages/app-desktop/gui/MenuBar.js:715
 msgid "&File"
 msgstr "&ไฟล์"
 
 #: packages/app-desktop/gui/MenuBar.js:360
-#: packages/app-desktop/gui/MenuBar.js:641
+#: packages/app-desktop/gui/MenuBar.js:642
 msgid "About Joplin"
 msgstr "เกี่ยวกับ Joplin"
 
@@ -1814,7 +1749,7 @@ msgid "Preferences..."
 msgstr ""
 
 #: packages/app-desktop/gui/MenuBar.js:377
-#: packages/app-desktop/gui/MenuBar.js:618
+#: packages/app-desktop/gui/MenuBar.js:619
 msgid "Check for updates..."
 msgstr "ตรวจสอบการอัพเดท..."
 
@@ -1830,34 +1765,34 @@ msgid "Hide %s"
 msgstr "ซ่อน %s"
 
 #: packages/app-desktop/gui/MenuBar.js:466
-#: packages/app-desktop/gui/MenuBar.js:717
+#: packages/app-desktop/gui/MenuBar.js:719
 msgid "&Edit"
 msgstr "&แก้ไข"
 
-#: packages/app-desktop/gui/MenuBar.js:498
+#: packages/app-desktop/gui/MenuBar.js:499
 msgid "&View"
 msgstr "&มุมมอง"
 
-#: packages/app-desktop/gui/MenuBar.js:506
+#: packages/app-desktop/gui/MenuBar.js:507
 msgid "Layout button sequence"
 msgstr ""
 
-#: packages/app-desktop/gui/MenuBar.js:551
-#: packages/app-desktop/gui/MenuBar.js:557
+#: packages/app-desktop/gui/MenuBar.js:552
+#: packages/app-desktop/gui/MenuBar.js:558
 #, fuzzy
 msgid "Zoom In"
 msgstr "ซูมเข้า"
 
-#: packages/app-desktop/gui/MenuBar.js:564
+#: packages/app-desktop/gui/MenuBar.js:565
 #, fuzzy
 msgid "Zoom Out"
 msgstr "ซูมออก"
 
-#: packages/app-desktop/gui/MenuBar.js:573
+#: packages/app-desktop/gui/MenuBar.js:574
 msgid "&Go"
 msgstr ""
 
-#: packages/app-desktop/gui/MenuBar.js:579
+#: packages/app-desktop/gui/MenuBar.js:580
 #: packages/app-desktop/gui/NoteEditor/commands/focusElementNoteBody.js:17
 #: packages/app-desktop/gui/NoteEditor/commands/focusElementNoteTitle.js:17
 #: packages/app-desktop/gui/NoteList/commands/focusElementNoteList.js:18
@@ -1865,36 +1800,36 @@ msgstr ""
 msgid "Focus"
 msgstr ""
 
-#: packages/app-desktop/gui/MenuBar.js:585
+#: packages/app-desktop/gui/MenuBar.js:586
 #, fuzzy
 msgid "Note&book"
 msgstr "สมุดบันทึก"
 
-#: packages/app-desktop/gui/MenuBar.js:591
+#: packages/app-desktop/gui/MenuBar.js:592
 #, fuzzy
 msgid "&Note"
 msgstr "บันทึก"
 
-#: packages/app-desktop/gui/MenuBar.js:601
+#: packages/app-desktop/gui/MenuBar.js:602
 msgid "&Tools"
 msgstr "&เครื่องมือ"
 
-#: packages/app-desktop/gui/MenuBar.js:605
+#: packages/app-desktop/gui/MenuBar.js:606
 msgid "&Help"
 msgstr "&ช่วยเหลือ"
 
-#: packages/app-desktop/gui/MenuBar.js:612
+#: packages/app-desktop/gui/MenuBar.js:613
 #, fuzzy
 msgid "Joplin Forum"
 msgstr "Joplin Forum"
 
-#: packages/app-desktop/gui/MenuBar.js:615
+#: packages/app-desktop/gui/MenuBar.js:616
 #: packages/app-mobile/components/screens/ConfigScreen.js:454
 #, fuzzy
 msgid "Make a donation"
 msgstr "บริจาคช่วยเหลือ"
 
-#: packages/app-desktop/gui/MenuBar.js:627
+#: packages/app-desktop/gui/MenuBar.js:628
 #, fuzzy
 msgid "Toggle development tools"
 msgstr "สลับเครื่องมือนักพัฒนา"
@@ -1916,14 +1851,10 @@ msgid "Lines"
 msgstr "บรรทัด"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:98
-#: packages/lib/models/Setting.js:554 packages/lib/models/Setting.js:555
-#: packages/lib/models/Setting.js:556
 msgid "Editor"
 msgstr "ตัวแก้ไข"
 
 #: packages/app-desktop/gui/NoteContentPropertiesDialog.js:99
-#: packages/lib/models/Setting.js:554 packages/lib/models/Setting.js:555
-#: packages/lib/models/Setting.js:557
 #, fuzzy
 msgid "Viewer"
 msgstr "Viewer"
@@ -1946,76 +1877,76 @@ msgstr "สถานะ"
 msgid "Close"
 msgstr "ปิด"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:185
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:198
 msgid "strong text"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:186
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:199
 msgid "emphasised text"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:188
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:209
 msgid "Insert Hyperlink"
 msgstr "แทรกไฮเปอร์ลิงก์"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:222
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:224
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:225
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:243
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:245
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:246
 msgid "List item"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:578
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:599
 msgid "Layout"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:578
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:599
 #, javascript-format
 msgid ""
 "This note has no content. Click on \"%s\" to toggle the editor and edit the "
 "note."
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:699
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:720
 #: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:18
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:128
 msgid "Cut"
 msgstr "ตัด"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:713
+#: packages/app-desktop/gui/NoteEditor/NoteBody/CodeMirror/CodeMirror.js:734
 #: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:23
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:143
 msgid "Paste"
 msgstr "วาง"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:518
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:53
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:523
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:58
 #: packages/app-mobile/components/screens/Note.js:801
 msgid "Attach file"
 msgstr "แนบไฟล์"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:528
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:533
 msgid "Code Block"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:537
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:542
 msgid "Inline Code"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:552
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:83
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:557
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:88
 msgid "Insert Date Time"
 msgstr "แทรก วันที่และเวลา"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1008
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1013
 msgid "Drop notes or files here"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1008
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1013
 #, fuzzy
 msgid "Code View"
 msgstr "Code"
 
-#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1008
+#: packages/app-desktop/gui/NoteEditor/NoteBody/TinyMCE/TinyMCE.js:1013
 #, javascript-format
 msgid ""
 "Please wait for all attachments to be downloaded and decrypted. You may also "
@@ -2052,36 +1983,36 @@ msgstr ""
 msgid "Subscript"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:288
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:289
 #, fuzzy
 msgid "Click to add tags..."
 msgstr "ตรวจสอบการอัพเดท..."
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:342
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:343
 msgid ""
 "This Rich Text editor has a number of limitations and it is recommended to "
 "be aware of them before using it."
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:346
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:347
 msgid "Read more about it"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:351
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:352
 msgid "Dismiss"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:387
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:388
 msgid "The following attachments are being watched for changes:"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:390
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:391
 msgid ""
 "The attachments will no longer be watched when you switch to a different "
 "note."
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:396
+#: packages/app-desktop/gui/NoteEditor/NoteEditor.js:397
 #, javascript-format
 msgid "In: %s"
 msgstr "ใน: %s"
@@ -2091,8 +2022,8 @@ msgid "to-do"
 msgstr "to-do"
 
 #: packages/app-desktop/gui/NoteEditor/NoteTitle/NoteTitleBar.js:79
-#: packages/server/dist/models/UserModel.js:199
-#: packages/server/dist/models/UserModel.js:208
+#: packages/server/dist/models/UserModel.js:204
+#: packages/server/dist/models/UserModel.js:213
 msgid "note"
 msgstr "บันทึก"
 
@@ -2127,75 +2058,79 @@ msgid "Italic"
 msgstr "ตัวเอียง"
 
 #: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:43
+msgid "Summary Detail"
+msgstr ""
+
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:48
 msgid "Hyperlink"
 msgstr "ไฮเปอร์ลิงก์"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:48
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:53
 msgid "Code"
 msgstr "Code"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:58
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:63
 msgid "Numbered List"
 msgstr "รายการแบบตัวเลข"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:63
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:68
 #, fuzzy
 msgid "Bulleted List"
 msgstr "รายการ"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:68
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:73
 msgid "Checkbox"
 msgstr "ช่องทำเครื่องหมาย"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:73
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:78
 msgid "Heading"
 msgstr "หัวข้อ"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:78
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:83
 #, fuzzy
 msgid "Horizontal Rule"
 msgstr "เส้นขั้น"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:88
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:93
 #, fuzzy
 msgid "Delete line"
 msgstr "ลบบันทึก?"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:92
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:97
 #, fuzzy
 msgid "Duplicate line"
 msgstr "ลบบันทึก?"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:96
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:101
 msgid "Undo"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:100
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:105
 msgid "Redo"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:104
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:109
 msgid "Indent less"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:108
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:113
 msgid "Indent more"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:112
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:117
 #, fuzzy
 msgid "Toggle comment"
 msgstr "สลับรายการบันทึก"
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:116
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:121
 msgid "Sort selected lines"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:120
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:125
 msgid "Swap line up"
 msgstr ""
 
-#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:124
+#: packages/app-desktop/gui/NoteEditor/editorCommandDeclarations.js:129
 msgid "Swap line down"
 msgstr ""
 
@@ -2204,7 +2139,6 @@ msgid "There was an error downloading this attachment:"
 msgstr ""
 
 #: packages/app-desktop/gui/NoteEditor/utils/contextMenu.js:62
-#: packages/lib/services/ResourceEditWatcher/index.js:196
 msgid "This attachment is not downloaded or not decrypted yet"
 msgstr ""
 
@@ -2244,7 +2178,6 @@ msgid "View"
 msgstr "&มุมมอง"
 
 #: packages/app-desktop/gui/NoteList/NoteList.js:163
-#: packages/lib/models/Setting.js:570
 msgid "Sort notes by"
 msgstr "จัดเรียงบันทึกโดย"
 
@@ -2272,6 +2205,10 @@ msgstr "รายการบันทึก"
 msgid "Search in all the notes"
 msgstr "ค้นหาในบันทึกทั้งหมด"
 
+#: packages/app-desktop/gui/NotePropertiesDialog.min.js:29
+msgid "Created"
+msgstr "สร้างเมื่อ"
+
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:31
 msgid "Completed"
 msgstr ""
@@ -2286,7 +2223,6 @@ msgid "URL"
 msgstr "URL"
 
 #: packages/app-desktop/gui/NotePropertiesDialog.min.js:34
-#: packages/lib/models/Setting.js:1694
 msgid "Note History"
 msgstr "ประวัติบันทึกย้อนหลัง"
 
@@ -2328,8 +2264,7 @@ msgstr "ขนาด"
 msgid "Action"
 msgstr "การกระทำ"
 
-#: packages/app-desktop/gui/ResourceScreen.js:43
-#: packages/lib/models/BaseItem.js:722 packages/lib/path-utils.js:90
+#: packages/app-desktop/gui/ResourceScreen.js:43 packages/lib/path-utils.js:90
 #: packages/lib/path-utils.js:131
 msgid "Untitled"
 msgstr "ไม่มีชื่อ"
@@ -2355,29 +2290,29 @@ msgstr "ไม่มีทรัพยากร"
 msgid "Warning: not all resources shown for performance reasons (limit: %s)."
 msgstr "คำเตือน: ทรัพยากรทั้งหมดไม่ได้ถูกแสดง ด้วยเห็นผลเรื่องสมรรถภาพ (จำกัด: %s)"
 
-#: packages/app-desktop/gui/Root.js:107
+#: packages/app-desktop/gui/Root.js:113
 #, fuzzy
 msgid "Confirmation"
 msgstr "การตั้งค่า"
 
-#: packages/app-desktop/gui/Root.js:120
+#: packages/app-desktop/gui/Root.js:126
 msgid "The Web Clipper needs your authorisation to access your data."
 msgstr ""
 
-#: packages/app-desktop/gui/Root.js:121
+#: packages/app-desktop/gui/Root.js:127
 #, fuzzy
 msgid "Grant authorisation"
 msgstr "Token สำหรับการขออนุมัติ:"
 
-#: packages/app-desktop/gui/Root.js:161
+#: packages/app-desktop/gui/Root.js:167
 msgid "OneDrive Login"
 msgstr "เข้าสู่ระบบ OneDrive"
 
-#: packages/app-desktop/gui/Root.js:162
+#: packages/app-desktop/gui/Root.js:168
 msgid "Dropbox Login"
 msgstr "เข้าสู่ระบบ Dropbox"
 
-#: packages/app-desktop/gui/Root.js:165
+#: packages/app-desktop/gui/Root.js:171
 #, fuzzy
 msgid "Note attachments"
 msgstr "ไฟล์แนบ"
@@ -2507,7 +2442,6 @@ msgstr "บันทึกทั้งหมด"
 
 #: packages/app-desktop/gui/Sidebar/Sidebar.js:455
 #: packages/app-mobile/components/side-menu-content.js:338
-#: packages/lib/commands/synchronize.js:19
 msgid "Synchronise"
 msgstr "ซิงโครไนซ์"
 
@@ -2649,13 +2583,13 @@ msgstr ""
 
 #: packages/app-desktop/services/plugins/UserWebviewDialogButtonBar.js:22
 #: packages/app-mobile/components/screens/Note.js:530
-#: packages/lib/shim-init-node.js:167 packages/lib/versionInfo.js:27
+#: packages/lib/shim-init-node.js:166
 msgid "Yes"
 msgstr "ใช่"
 
 #: packages/app-desktop/services/plugins/UserWebviewDialogButtonBar.js:23
 #: packages/app-mobile/components/screens/Note.js:531
-#: packages/lib/shim-init-node.js:167 packages/lib/versionInfo.js:27
+#: packages/lib/shim-init-node.js:166
 msgid "No"
 msgstr "ไม่"
 
@@ -2694,10 +2628,6 @@ msgstr "สร้างสมุดบันทึก"
 msgid "There are currently no notes. Create one by clicking on the (+) button."
 msgstr "ไม่มีบันทึกอยู่เลย สามารถสร้างบันทึกใหม่ได้โดยคลิกที่ปุ่ม (+)"
 
-#: packages/app-mobile/components/screen-header.js:187
-msgid "Delete these notes?"
-msgstr "ลบบันทึกเหล่านี้?"
-
 #: packages/app-mobile/components/screens/ConfigScreen.js:60
 #, fuzzy
 msgid "Warning"
@@ -2715,7 +2645,7 @@ msgid "Information"
 msgstr "ข้อมูล"
 
 #: packages/app-mobile/components/screens/ConfigScreen.js:312
-#: packages/app-mobile/components/screens/encryption-config.js:212
+#: packages/app-mobile/components/screens/encryption-config.js:213
 msgid "Encryption Config"
 msgstr "ตั้งค่าการเข้ารหัส"
 
@@ -2864,7 +2794,7 @@ msgid "Permission needed"
 msgstr "สิทธิ์การเข้าใช้งานกล้อง"
 
 #: packages/app-mobile/components/screens/Note.js:529
-#: packages/lib/shim-init-node.js:166
+#: packages/lib/shim-init-node.js:165
 #, javascript-format
 msgid ""
 "You are about to attach a large image (%dx%d pixels). Would you like to "
@@ -2959,18 +2889,47 @@ msgid "Master Key %s"
 msgstr "มาสเตอร์คีย์ %s"
 
 #: packages/app-mobile/components/screens/encryption-config.js:103
-#: packages/app-mobile/components/screens/encryption-config.js:133
+#: packages/app-mobile/components/screens/encryption-config.js:134
 msgid "Password:"
 msgstr "รหัสผ่าน:"
 
-#: packages/app-mobile/components/screens/encryption-config.js:113
+#: packages/app-mobile/components/screens/encryption-config.js:114
 #, fuzzy
 msgid "Password cannot be empty"
 msgstr "รหัสผ่านไม่สามารถเว้นว่างได้"
 
-#: packages/app-mobile/components/screens/encryption-config.js:116
+#: packages/app-mobile/components/screens/encryption-config.js:117
 msgid "Confirm password cannot be empty"
 msgstr "รหัสผ่านยืนยันไม่สามารถเว้นว่างได้"
+
+#: packages/app-mobile/components/screens/encryption-config.js:161
+#, fuzzy
+msgid "Loaded"
+msgstr "ดาวน์โหลดแล้ว"
+
+#: packages/app-mobile/components/screens/encryption-config.js:205
+msgid "Missing Master Keys"
+msgstr ""
+
+#: packages/app-mobile/components/screens/encryption-config.js:206
+msgid ""
+"The master keys with these IDs are used to encrypt some of your items, "
+"however the application does not currently have access to them. It is likely "
+"they will eventually be downloaded via synchronisation."
+msgstr ""
+
+#: packages/app-mobile/components/screens/encryption-config.js:216
+msgid ""
+"For more information about End-To-End Encryption (E2EE) and advice on how to "
+"enable it please check the documentation:"
+msgstr ""
+"สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการเข้ารหัสแบบ End-To-End Encryption (E2EE) "
+"และคำแนะนำในการเปิดใช้งาน โปรดอ่านคู่มือการใช้งาน:"
+
+#: packages/app-mobile/components/screens/encryption-config.js:221
+#: packages/app-mobile/components/screens/status.js:142
+msgid "Status"
+msgstr "สถานะ"
 
 #: packages/app-mobile/components/screens/folder.js:87
 #, javascript-format
@@ -3016,26 +2975,6 @@ msgstr "สมุดบันทึกใหม่"
 msgid "Mobile data - auto-sync disabled"
 msgstr ""
 
-#: packages/lib/BaseApplication.js:154 packages/lib/BaseApplication.js:166
-#: packages/lib/BaseApplication.js:198
-#, javascript-format
-msgid "Usage: %s"
-msgstr ""
-
-#: packages/lib/BaseApplication.js:238
-#, javascript-format
-msgid "Unknown flag: %s"
-msgstr ""
-
-#: packages/lib/JoplinServerApi.js:73
-#, javascript-format
-msgid ""
-"Could not connect to Joplin Server. Please check the Synchronisation options "
-"in the config screen. Full error was:\n"
-"\n"
-"%s"
-msgstr ""
-
 #: packages/lib/SyncTargetAmazonS3.js:28
 msgid "AWS S3"
 msgstr ""
@@ -3048,138 +2987,13 @@ msgstr "Dropbox"
 msgid "File system"
 msgstr ""
 
-#: packages/lib/SyncTargetJoplinCloud.js:28
-#, fuzzy
-msgid "Joplin Cloud"
-msgstr "Joplin Forum"
-
-#: packages/lib/SyncTargetJoplinCloud.js:31
-msgid ""
-"Joplin's own sync service. Also gives access to Joplin-specific features "
-"such as publishing notes or collaborating on notebooks with others."
-msgstr ""
-
-#: packages/lib/SyncTargetJoplinServer.js:60
-#, fuzzy
-msgid "Joplin Server"
-msgstr "เว็บไซต์ของ Joplin"
-
 #: packages/lib/SyncTargetNextcloud.js:25
 msgid "Nextcloud"
 msgstr "Nextcloud"
 
-#: packages/lib/SyncTargetNone.js:22
-msgid "(None)"
-msgstr ""
-
-#: packages/lib/SyncTargetOneDrive.js:32
-msgid "OneDrive"
-msgstr "OneDrive"
-
 #: packages/lib/SyncTargetWebDAV.js:23
 msgid "WebDAV"
 msgstr "WebDAV"
-
-#: packages/lib/Synchronizer.js:143
-#, javascript-format
-msgid "Created local items: %d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:145
-#, javascript-format
-msgid "Updated local items: %d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:147
-#, javascript-format
-msgid "Created remote items: %d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:149
-#, javascript-format
-msgid "Updated remote items: %d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:151
-#, javascript-format
-msgid "Deleted local items: %d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:153
-#, javascript-format
-msgid "Deleted remote items: %d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:155
-#, javascript-format
-msgid "Fetched items: %d/%d."
-msgstr ""
-
-#: packages/lib/Synchronizer.js:157
-msgid "Cancelling..."
-msgstr "กำลังยกเลิก..."
-
-#: packages/lib/Synchronizer.js:159
-#, fuzzy, javascript-format
-msgid "Completed: %s (%s)"
-msgstr "เสร็จสิ้นเมื่อ: %s"
-
-#: packages/lib/Synchronizer.js:161
-#, javascript-format
-msgid "Last error: %s"
-msgstr "ข้อผิดพลาดล่าสุด: %s"
-
-#: packages/lib/Synchronizer.js:275
-#, fuzzy
-msgid "Idle"
-msgstr "ว่าง"
-
-#: packages/lib/Synchronizer.js:277
-msgid "In progress"
-msgstr "กำลังกำเนินการ"
-
-#: packages/lib/Synchronizer.js:984
-msgid ""
-"Unknown item type downloaded - please upgrade Joplin to the latest version"
-msgstr ""
-
-#: packages/lib/commands/historyForward.js:17
-msgid "Forward"
-msgstr ""
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:47
-#, javascript-format
-msgid "Decrypted items: %s / %s"
-msgstr "รายการที่ถูกถอดรหัส: %s / %s"
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:53
-#, javascript-format
-msgid "Encryption will be enabled using the master key created on %s"
-msgstr ""
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:65
-msgid ""
-"Please confirm that you would like to re-encrypt your complete database."
-msgstr ""
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:71
-msgid "Your data is going to be re-encrypted and synced again."
-msgstr ""
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:147
-msgid ""
-"Please enter your password in the master key list below before upgrading the "
-"key."
-msgstr ""
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:154
-msgid "The master key has been upgraded successfully!"
-msgstr ""
-
-#: packages/lib/components/EncryptionConfigScreen/utils.js:157
-#, javascript-format
-msgid "Could not upgrade master key: %s"
-msgstr ""
 
 #: packages/lib/components/shared/config-shared.js:47
 msgid "Checking... Please wait."
@@ -3215,38 +3029,15 @@ msgstr ""
 "\n"
 "โปรดลองอีกครั้ง"
 
-#: packages/lib/models/BaseItem.js:721
-msgid "Encrypted"
-msgstr "เข้ารหัสแล้ว"
-
-#: packages/lib/models/BaseItem.js:782
-#, fuzzy
-msgid "Encrypted items cannot be modified"
-msgstr "รายการที่เข้ารหัสแล้วไม่สามารถแก้ไขได้"
-
-#: packages/lib/models/Folder.js:38 packages/lib/models/Note.js:36
+#: packages/lib/models/Note.js:36
 #, fuzzy
 msgid "title"
 msgstr "ชื่อเรื่อง"
 
-#: packages/lib/models/Folder.js:39 packages/lib/models/Note.js:37
+#: packages/lib/models/Note.js:37
 #, fuzzy
 msgid "updated date"
 msgstr "แก้ไขเมื่อ"
-
-#: packages/lib/models/Folder.js:103
-msgid "Conflicts"
-msgstr "ขัดแย้ง"
-
-#: packages/lib/models/Folder.js:558
-#, fuzzy
-msgid "Cannot move notebook to this location"
-msgstr "ไม่สามารถย้ายสมุดบันทึกมาที่ตำแหน่งนี้"
-
-#: packages/lib/models/Folder.js:610
-#, fuzzy, javascript-format
-msgid "Notebooks cannot be named \"%s\", which is a reserved title."
-msgstr "สมุดบันทึกไม่สามารถใช้ชื่อ “%s” เพราะมีคำสงวน"
 
 #: packages/lib/models/Note.js:38
 #, fuzzy
@@ -3281,701 +3072,6 @@ msgstr "ลบบันทึก \"%s\"?"
 msgid "Delete these %d notes?"
 msgstr "ลบบันทึก %d เหล่านี้?"
 
-#: packages/lib/models/Resource.js:354
-msgid "Not downloaded"
-msgstr "ยังไม่ได้ดาวน์โหลด"
-
-#: packages/lib/models/Resource.js:356
-msgid "Downloading"
-msgstr "กำลังดาวน์โหลด"
-
-#: packages/lib/models/Resource.js:358
-msgid "Downloaded"
-msgstr "ดาวน์โหลดแล้ว"
-
-#: packages/lib/models/Resource.js:360
-msgid "Error"
-msgstr "ผิดพลาด"
-
-#: packages/lib/models/Resource.js:408
-#, fuzzy
-msgid "Conflicts (attachments)"
-msgstr "ไฟล์แนบ"
-
-#: packages/lib/models/Resource.js:422
-#, fuzzy, javascript-format
-msgid "Attachment conflict: \"%s\""
-msgstr "ไฟล์แนบ"
-
-#: packages/lib/models/Resource.js:423
-#, javascript-format
-msgid ""
-"There was a [conflict](%s) on the attachment below.\n"
-"\n"
-"%s"
-msgstr ""
-
-#: packages/lib/models/Setting.js:115
-#, fuzzy
-msgid "yes"
-msgstr "ใช่"
-
-#: packages/lib/models/Setting.js:115 packages/lib/models/Setting.js:116
-#, javascript-format
-msgid "(wysiwyg: %s)"
-msgstr ""
-
-#: packages/lib/models/Setting.js:116
-#, fuzzy
-msgid "no"
-msgstr "n"
-
-#: packages/lib/models/Setting.js:118
-#, javascript-format
-msgid ""
-"Attention: If you change this location, make sure you copy all your content "
-"to it before syncing, otherwise all files will be removed! See the FAQ for "
-"more details: %s"
-msgstr ""
-
-#: packages/lib/models/Setting.js:124
-#, fuzzy
-msgid "Light"
-msgstr "สว่าง"
-
-#: packages/lib/models/Setting.js:125
-#, fuzzy
-msgid "Dark"
-msgstr "มืด"
-
-#: packages/lib/models/Setting.js:126
-msgid "Dracula"
-msgstr "Dracula"
-
-#: packages/lib/models/Setting.js:127
-msgid "Solarised Light"
-msgstr "Solarised Light"
-
-#: packages/lib/models/Setting.js:128
-msgid "Solarised Dark"
-msgstr "Solarised Dark"
-
-#: packages/lib/models/Setting.js:129
-msgid "Nord"
-msgstr "Nord"
-
-#: packages/lib/models/Setting.js:130
-msgid "Aritim Dark"
-msgstr ""
-
-#: packages/lib/models/Setting.js:131
-msgid "OLED Dark"
-msgstr "OLED Dark"
-
-#: packages/lib/models/Setting.js:152
-msgid "Open Sync Wizard..."
-msgstr ""
-
-#: packages/lib/models/Setting.js:162
-msgid "Synchronisation target"
-msgstr "จุดหมายการซิงโครไนซ์"
-
-#: packages/lib/models/Setting.js:164
-msgid ""
-"The target to synchronise to. Each sync target may have additional "
-"parameters which are named as `sync.NUM.NAME` (all documented below)."
-msgstr ""
-
-#: packages/lib/models/Setting.js:197
-msgid "Directory to synchronise with (absolute path)"
-msgstr ""
-
-#: packages/lib/models/Setting.js:209
-msgid "Nextcloud WebDAV URL"
-msgstr "Nextcloud WebDAV URL"
-
-#: packages/lib/models/Setting.js:221
-msgid "Nextcloud username"
-msgstr "ชื่อผู้ใช้ Nextcloud"
-
-#: packages/lib/models/Setting.js:232
-msgid "Nextcloud password"
-msgstr "รหัสผ่าน Nextcloud"
-
-#: packages/lib/models/Setting.js:243
-msgid "WebDAV URL"
-msgstr "WebDAV URL"
-
-#: packages/lib/models/Setting.js:255
-msgid "WebDAV username"
-msgstr "ชื่อผู้ใช้ WebDAV"
-
-#: packages/lib/models/Setting.js:266
-msgid "WebDAV password"
-msgstr "รหัสผ่าน WebDAV"
-
-#: packages/lib/models/Setting.js:285
-msgid "AWS S3 bucket"
-msgstr ""
-
-#: packages/lib/models/Setting.js:297
-msgid "AWS S3 URL"
-msgstr ""
-
-#: packages/lib/models/Setting.js:308
-msgid "AWS key"
-msgstr ""
-
-#: packages/lib/models/Setting.js:319
-msgid "AWS secret"
-msgstr ""
-
-#: packages/lib/models/Setting.js:330
-msgid "Joplin Server URL"
-msgstr ""
-
-#: packages/lib/models/Setting.js:348
-#, fuzzy
-msgid "Joplin Server email"
-msgstr "เว็บไซต์ของ Joplin"
-
-#: packages/lib/models/Setting.js:359
-#, fuzzy
-msgid "Joplin Server password"
-msgstr "ตั้งรหัสผ่าน"
-
-#: packages/lib/models/Setting.js:386
-#, fuzzy
-msgid "Joplin Cloud email"
-msgstr "เว็บไซต์ของ Joplin"
-
-#: packages/lib/models/Setting.js:397
-#, fuzzy
-msgid "Joplin Cloud password"
-msgstr "ตั้งรหัสผ่าน"
-
-#: packages/lib/models/Setting.js:409
-msgid "Attachment download behaviour"
-msgstr ""
-
-#: packages/lib/models/Setting.js:410
-msgid ""
-"In \"Manual\" mode, attachments are downloaded only when you click on them. "
-"In \"Auto\", they are downloaded when you open the note. In \"Always\", all "
-"the attachments are downloaded whether you open the note or not."
-msgstr ""
-
-#: packages/lib/models/Setting.js:413
-#, fuzzy
-msgid "Always"
-msgstr "ตลอดเวลา"
-
-#: packages/lib/models/Setting.js:414
-msgid "Manual"
-msgstr "ทำด้วยตนเอง"
-
-#: packages/lib/models/Setting.js:415
-msgid "Auto"
-msgstr "อัตโนมัติ"
-
-#: packages/lib/models/Setting.js:435
-msgid "Max concurrent connections"
-msgstr ""
-
-#: packages/lib/models/Setting.js:448
-msgid "Language"
-msgstr "ภาษา"
-
-#: packages/lib/models/Setting.js:459
-msgid "Date format"
-msgstr "รูปแบบวันที่"
-
-#: packages/lib/models/Setting.js:480
-msgid "Time format"
-msgstr "รูปแบบเวลา"
-
-#: packages/lib/models/Setting.js:499
-msgid "Theme"
-msgstr "ธีม"
-
-#: packages/lib/models/Setting.js:510
-msgid "Automatically switch theme to match system theme"
-msgstr ""
-
-#: packages/lib/models/Setting.js:522
-msgid "Preferred light theme"
-msgstr ""
-
-#: packages/lib/models/Setting.js:536
-msgid "Preferred dark theme"
-msgstr ""
-
-#: packages/lib/models/Setting.js:546
-#, fuzzy
-msgid "Show note counts"
-msgstr "แสดงจำนวนบันทึก"
-
-#: packages/lib/models/Setting.js:554 packages/lib/models/Setting.js:556
-#: packages/lib/models/Setting.js:557
-msgid "Split View"
-msgstr "มุมมองแบบแบ่งครึ่ง"
-
-#: packages/lib/models/Setting.js:554
-#, javascript-format
-msgid "%s / %s / %s"
-msgstr "%s / %s / %s"
-
-#: packages/lib/models/Setting.js:555 packages/lib/models/Setting.js:556
-#: packages/lib/models/Setting.js:557
-#, javascript-format
-msgid "%s / %s"
-msgstr "%s / %s"
-
-#: packages/lib/models/Setting.js:561
-#, fuzzy
-msgid "Uncompleted to-dos on top"
-msgstr "to-do ที่ยังไม่เสร็จไว้บนสุด"
-
-#: packages/lib/models/Setting.js:562
-#, fuzzy
-msgid "Show completed to-dos"
-msgstr "แสดง to-do ที่เสร็จแล้ว"
-
-#: packages/lib/models/Setting.js:588
-#, fuzzy
-msgid "Auto-pair braces, parenthesis, quotations, etc."
-msgstr "จับคู่อัตโนมัติ {}, (), \"\", ฯลฯ"
-
-#: packages/lib/models/Setting.js:591 packages/lib/models/Setting.js:610
-#, fuzzy
-msgid "Reverse sort order"
-msgstr "จัดเรียงย้อนกลับ"
-
-#: packages/lib/models/Setting.js:598
-msgid "Sort notebooks by"
-msgstr "จัดเรียงสมุดบันทึกโดย"
-
-#: packages/lib/models/Setting.js:611
-#, fuzzy
-msgid "Save geo-location with notes"
-msgstr "บันทึกตำหน่งภูมิศาสตร์"
-
-#: packages/lib/models/Setting.js:633
-msgid "When creating a new to-do:"
-msgstr "เมื่อสร้าง to-do ใหม่:"
-
-#: packages/lib/models/Setting.js:636 packages/lib/models/Setting.js:652
-#, fuzzy
-msgid "Focus title"
-msgstr "โฟกัสที่ชื่อเรื่อง"
-
-#: packages/lib/models/Setting.js:637 packages/lib/models/Setting.js:653
-#, fuzzy
-msgid "Focus body"
-msgstr "โฟกัสที่เนื้อเรื่อง"
-
-#: packages/lib/models/Setting.js:649
-#, fuzzy
-msgid "When creating a new note:"
-msgstr "เมื่อสร้างบันทึกใหม่:"
-
-#: packages/lib/models/Setting.js:682
-msgid "Enable soft breaks"
-msgstr "เปิดใช้งาน Soft Break"
-
-#: packages/lib/models/Setting.js:683
-#, fuzzy
-msgid "Enable typographer support"
-msgstr "เปิดใช้งานการรองรับ Typographer"
-
-#: packages/lib/models/Setting.js:684
-#, fuzzy
-msgid "Enable Linkify"
-msgstr "เปิดใช้ประวัติบันทึกย้อนหลัง"
-
-#: packages/lib/models/Setting.js:685
-msgid "Enable math expressions"
-msgstr "เปิดใช้งาน Math Expressions"
-
-#: packages/lib/models/Setting.js:686
-msgid "Enable Fountain syntax support"
-msgstr "เปิดใช้งานการรองรับ Fountain syntax"
-
-#: packages/lib/models/Setting.js:687
-msgid "Enable Mermaid diagrams support"
-msgstr "เปิดใช้งานการรองรับ Mermaid diagram"
-
-#: packages/lib/models/Setting.js:688
-#, fuzzy
-msgid "Enable audio player"
-msgstr "เปิดใช้งาน Markdown Emoji"
-
-#: packages/lib/models/Setting.js:689
-msgid "Enable video player"
-msgstr ""
-
-#: packages/lib/models/Setting.js:690
-msgid "Enable PDF viewer"
-msgstr ""
-
-#: packages/lib/models/Setting.js:691
-msgid "Enable ==mark== syntax"
-msgstr "เปิดใช้งาน ==mark== syntax"
-
-#: packages/lib/models/Setting.js:692
-msgid "Enable footnotes"
-msgstr "เปิดใช้งาน Footnotes"
-
-#: packages/lib/models/Setting.js:693
-msgid "Enable table of contents extension"
-msgstr "เปิดใช้งานส่วนเสริมสารบัญ"
-
-#: packages/lib/models/Setting.js:694
-msgid "Enable ~sub~ syntax"
-msgstr "เปิดใช้งาน ~sub~ syntax"
-
-#: packages/lib/models/Setting.js:695
-msgid "Enable ^sup^ syntax"
-msgstr "เปิดใช้งาน ^sup^ syntax"
-
-#: packages/lib/models/Setting.js:696
-msgid "Enable deflist syntax"
-msgstr "เปิดใช้งาน deflist syntax"
-
-#: packages/lib/models/Setting.js:697
-msgid "Enable abbreviation syntax"
-msgstr "เปิดใช้งาน abbreviation syntax"
-
-#: packages/lib/models/Setting.js:698
-msgid "Enable markdown emoji"
-msgstr "เปิดใช้งาน Markdown Emoji"
-
-#: packages/lib/models/Setting.js:699
-msgid "Enable ++insert++ syntax"
-msgstr "เปิดใช้งาน ++insert++syntax"
-
-#: packages/lib/models/Setting.js:700
-msgid "Enable multimarkdown table extension"
-msgstr "เปิดใช้งานส่วนเสริมตาราง Multimarkdown"
-
-#: packages/lib/models/Setting.js:711
-msgid "Show tray icon"
-msgstr "แสดงไอคอนใน System tray"
-
-#: packages/lib/models/Setting.js:713
-#, fuzzy
-msgid "Note: Does not work in all desktop environments."
-msgstr "หมายเหตุ: ทำงานได้กับบาง Desktop Environment เท่านั้น"
-
-#: packages/lib/models/Setting.js:713
-msgid ""
-"This will allow Joplin to run in the background. It is recommended to enable "
-"this setting so that your notes are constantly being synchronised, thus "
-"reducing the number of conflicts."
-msgstr ""
-
-#: packages/lib/models/Setting.js:717
-msgid "Start application minimised in the tray icon"
-msgstr "เริ่มต้นแอปพลิเคชั่นโดยย่อไว้ที่ไอคอน System tray"
-
-#: packages/lib/models/Setting.js:738
-msgid "Editor font size"
-msgstr "ขนาดตัวอักษรของตัวแก้ไข"
-
-#: packages/lib/models/Setting.js:745
-msgid "Editor font"
-msgstr "แบบตัวอักษรของตัวแก้ไข"
-
-#: packages/lib/models/Setting.js:752 packages/lib/models/Setting.js:759
-#: packages/lib/models/Setting.js:906
-msgid "Default"
-msgstr "ค่าเริ่มต้น"
-
-#: packages/lib/models/Setting.js:770
-msgid "Editor font family"
-msgstr "ตระกูลของแบบตัวอักษรของตัวแก้ไข"
-
-#: packages/lib/models/Setting.js:771
-msgid ""
-"Used for most text in the markdown editor. If not found, a generic "
-"proportional (variable width) font is used."
-msgstr ""
-
-#: packages/lib/models/Setting.js:780
-#, fuzzy
-msgid "Editor monospace font family"
-msgstr "ตระกูลของแบบตัวอักษรของตัวแก้ไข"
-
-#: packages/lib/models/Setting.js:781
-msgid ""
-"Used where a fixed width font is needed to lay out text legibly (e.g. "
-"tables, checkboxes, code). If not found, a generic monospace (fixed width) "
-"font is used."
-msgstr ""
-
-#: packages/lib/models/Setting.js:784
-msgid "Editor maximum width"
-msgstr ""
-
-#: packages/lib/models/Setting.js:784
-msgid "Set it to 0 to make it take the complete available space."
-msgstr ""
-
-#: packages/lib/models/Setting.js:803
-#, fuzzy
-msgid "Custom stylesheet for rendered Markdown"
-msgstr "Stylesheet แบบกำหนดเอง สำหรับ Joplin"
-
-#: packages/lib/models/Setting.js:819
-#, fuzzy
-msgid "Custom stylesheet for Joplin-wide app styles"
-msgstr "Stylesheet แบบกำหนดเอง สำหรับ Joplin"
-
-#: packages/lib/models/Setting.js:829
-msgid "Re-upload local data to sync target"
-msgstr ""
-
-#: packages/lib/models/Setting.js:839
-msgid "Delete local data and re-download from sync target"
-msgstr ""
-
-#: packages/lib/models/Setting.js:844
-msgid "Automatically update the application"
-msgstr "อัพเดทแอปพลิเคชั่นอัตโนมัติ"
-
-#: packages/lib/models/Setting.js:845
-msgid "Get pre-releases when checking for updates"
-msgstr ""
-
-#: packages/lib/models/Setting.js:845
-#, javascript-format
-msgid "See the pre-release page for more details: %s"
-msgstr ""
-
-#: packages/lib/models/Setting.js:853
-msgid "Synchronisation interval"
-msgstr "ความถี่ในการซิงโครไนซ์"
-
-#: packages/lib/models/Setting.js:857 packages/lib/models/Setting.js:858
-#: packages/lib/models/Setting.js:859
-#, javascript-format
-msgid "%d minutes"
-msgstr "%d นาที"
-
-#: packages/lib/models/Setting.js:860
-#, javascript-format
-msgid "%d hour"
-msgstr "%d ชั่วโมง"
-
-#: packages/lib/models/Setting.js:861 packages/lib/models/Setting.js:862
-#, javascript-format
-msgid "%d hours"
-msgstr "%d ชั่วโมง"
-
-#: packages/lib/models/Setting.js:872
-msgid "Synchronise only over WiFi connection"
-msgstr ""
-
-#: packages/lib/models/Setting.js:879
-msgid "Text editor command"
-msgstr ""
-
-#: packages/lib/models/Setting.js:879
-msgid ""
-"The editor command (may include arguments) that will be used to open a note. "
-"If none is provided it will try to auto-detect the default editor."
-msgstr ""
-
-#: packages/lib/models/Setting.js:880
-msgid "Page size for PDF export"
-msgstr "ขนาดของหน้า สำหรับการส่งออก PDF"
-
-#: packages/lib/models/Setting.js:882
-msgid "A4"
-msgstr "A4"
-
-#: packages/lib/models/Setting.js:883
-msgid "Letter"
-msgstr "Letter"
-
-#: packages/lib/models/Setting.js:884
-msgid "A3"
-msgstr "A3"
-
-#: packages/lib/models/Setting.js:885
-msgid "A5"
-msgstr "A5"
-
-#: packages/lib/models/Setting.js:886
-msgid "Tabloid"
-msgstr "Tabloid"
-
-#: packages/lib/models/Setting.js:887
-msgid "Legal"
-msgstr "Legal"
-
-#: packages/lib/models/Setting.js:890
-#, fuzzy
-msgid "Page orientation for PDF export"
-msgstr "การจัดวางหน้า สำหรับการส่งออก PDF"
-
-#: packages/lib/models/Setting.js:892
-msgid "Portrait"
-msgstr "แนวตั้ง"
-
-#: packages/lib/models/Setting.js:893
-msgid "Landscape"
-msgstr "แนวนอน"
-
-#: packages/lib/models/Setting.js:903
-msgid "Keyboard Mode"
-msgstr "โหมดของคีย์บอร์ด"
-
-#: packages/lib/models/Setting.js:907
-msgid "Emacs"
-msgstr "Emacs"
-
-#: packages/lib/models/Setting.js:908
-msgid "Vim"
-msgstr "Vim"
-
-#: packages/lib/models/Setting.js:935
-msgid "Custom TLS certificates"
-msgstr "TLS certificate แบบกำหนดเอง"
-
-#: packages/lib/models/Setting.js:936
-msgid ""
-"Comma-separated list of paths to directories to load the certificates from, "
-"or path to individual cert files. For example: /my/cert_dir, /other/custom."
-"pem. Note that if you make changes to the TLS settings, you must save your "
-"changes before clicking on \"Check synchronisation configuration\"."
-msgstr ""
-
-#: packages/lib/models/Setting.js:958
-msgid "Ignore TLS certificate errors"
-msgstr "เพิกเฉยข้อผิดพลาด TLS certificate"
-
-#: packages/lib/models/Setting.js:967
-msgid "Fail-safe"
-msgstr ""
-
-#: packages/lib/models/Setting.js:968
-msgid ""
-"Fail-safe: Do not wipe out local data when sync target is empty (often the "
-"result of a misconfiguration or bug)"
-msgstr ""
-
-#: packages/lib/models/Setting.js:972
-msgid ""
-"Specify the port that should be used by the API server. If not set, a "
-"default will be used."
-msgstr "ระบุพอร์ตที่จะใช้โดยเซิร์ฟเวอร์ API ถ้าไม่ระบุ จะใช้ค่าเริ่มต้น"
-
-#: packages/lib/models/Setting.js:977
-msgid "Enable note history"
-msgstr "เปิดใช้ประวัติบันทึกย้อนหลัง"
-
-#: packages/lib/models/Setting.js:987
-msgid "days"
-msgstr "วัน"
-
-#: packages/lib/models/Setting.js:987
-#, javascript-format
-msgid "%d days"
-msgstr "%d วัน"
-
-#: packages/lib/models/Setting.js:989
-#, fuzzy
-msgid "Keep note history for"
-msgstr "เก็บประวัติบันทึกย้อนหลังเป็นเวลา"
-
-#: packages/lib/models/Setting.js:1016
-msgid "Notebook list growth factor"
-msgstr ""
-
-#: packages/lib/models/Setting.js:1017 packages/lib/models/Setting.js:1030
-#: packages/lib/models/Setting.js:1043
-msgid ""
-"The factor property sets how the item will grow or shrink to fit the "
-"available space in its container with respect to the other items. Thus an "
-"item with a factor of 2 will take twice as much space as an item with a "
-"factor of 1.Restart app to see changes."
-msgstr ""
-
-#: packages/lib/models/Setting.js:1029
-msgid "Note list growth factor"
-msgstr ""
-
-#: packages/lib/models/Setting.js:1042
-msgid "Note area growth factor"
-msgstr ""
-
-#: packages/lib/models/Setting.js:1275
-#, fuzzy, javascript-format
-msgid "Invalid option value: \"%s\". Possible values are: %s."
-msgstr "ค่าของตัวเลือกไม่ถูกต้อง: \"%s\" ค่าที่เป็นไปได้คือ: %s."
-
-#: packages/lib/models/Setting.js:1680
-msgid "General"
-msgstr "ทั่วไป"
-
-#: packages/lib/models/Setting.js:1682
-msgid "Synchronisation"
-msgstr "การซิงโครไนซ์"
-
-#: packages/lib/models/Setting.js:1684
-#, fuzzy
-msgid "Appearance"
-msgstr "รูปร่างหน้าตา"
-
-#: packages/lib/models/Setting.js:1686
-msgid "Note"
-msgstr "บันทึก"
-
-#: packages/lib/models/Setting.js:1688
-#: packages/lib/services/interop/InteropService.js:49
-#: packages/lib/services/interop/InteropService.js:59
-msgid "Markdown"
-msgstr "Markdown"
-
-#: packages/lib/models/Setting.js:1692
-msgid "Application"
-msgstr "แอปพลิเคชัน"
-
-#: packages/lib/models/Setting.js:1696
-msgid "Encryption"
-msgstr "การเข้ารหัส"
-
-#: packages/lib/models/Setting.js:1698
-msgid "Web Clipper"
-msgstr "Web Clipper"
-
-#: packages/lib/models/Setting.js:1700
-#, fuzzy
-msgid "Keyboard Shortcuts"
-msgstr "โหมดของคีย์บอร์ด"
-
-#: packages/lib/models/Setting.js:1707
-msgid ""
-"These plugins enhance the Markdown renderer with additional features. Please "
-"note that, while these features might be useful, they are not standard "
-"Markdown and thus most of them will only work in Joplin. Additionally, some "
-"of them are *incompatible* with the WYSIWYG editor. If you open a note that "
-"uses one of these plugins in that editor, you will lose the plugin "
-"formatting. It is indicated below which plugins are compatible or not with "
-"the WYSIWYG editor."
-msgstr ""
-
-#: packages/lib/models/Setting.js:1709
-#, fuzzy, javascript-format
-msgid "Notes and settings are stored in: %s"
-msgstr "บันทึก และ การตั้งค่า จะถูกเก็บไว้ใน: %s"
-
-#: packages/lib/models/Tag.js:223
-#, javascript-format
-msgid "The tag \"%s\" already exists. Please choose a different name."
-msgstr "แท็ก “%s” มีอยู่แล้ว โปรดใช้ชื่ออื่น"
-
 #: packages/lib/onedrive-api-node-utils.js:46
 #, javascript-format
 msgid "All potential ports are in use - please report the issue at %s"
@@ -3999,273 +3095,10 @@ msgid ""
 "will be shared with any third party."
 msgstr ""
 
-#: packages/lib/onedrive-api.js:405
-msgid ""
-"Cannot refresh token: authentication data is missing. Starting the "
-"synchronisation again may fix the problem."
-msgstr ""
-
-#: packages/lib/services/KeymapService.js:273
-msgid "command"
-msgstr ""
-
-#: packages/lib/services/KeymapService.js:273
-#: packages/lib/services/KeymapService.js:278
-#, javascript-format
-msgid "\"%s\" is missing the required \"%s\" property."
-msgstr ""
-
-#: packages/lib/services/KeymapService.js:278
-#: packages/lib/services/KeymapService.js:285
-msgid "accelerator"
-msgstr ""
-
-#: packages/lib/services/KeymapService.js:285
-#, fuzzy, javascript-format
-msgid "Invalid %s: %s."
-msgstr "คำสั่งไม่ถูกต้อง: \"%s\""
-
-#: packages/lib/services/KeymapService.js:303
-#, javascript-format
-msgid ""
-"Accelerator \"%s\" is used for \"%s\" and \"%s\" commands. This may lead to "
-"unexpected behaviour."
-msgstr ""
-
-#: packages/lib/services/KeymapService.js:328
-#, javascript-format
-msgid "Accelerator \"%s\" is not valid."
-msgstr ""
-
-#: packages/lib/services/ReportService.js:152
-msgid "Items that cannot be synchronised"
-msgstr "รายการที่ไม่สามารถทำการซิงโครไนซ์"
-
-#: packages/lib/services/ReportService.js:153
-msgid ""
-"These items will remain on the device but will not be uploaded to the sync "
-"target. In order to find these items, either search for the title or the ID "
-"(which is displayed in brackets above)."
-msgstr ""
-
-#: packages/lib/services/ReportService.js:159
-#, fuzzy, javascript-format
-msgid "%s (%s) could not be uploaded: %s"
-msgstr "%s (%s) ไม่สามารถอัพโหลด: %s"
-
-#: packages/lib/services/ReportService.js:162
-#, fuzzy, javascript-format
-msgid "Item \"%s\" could not be downloaded: %s"
-msgstr "รายการ “%s” ไม่สามารถดาวน์โหลด: %s"
-
-#: packages/lib/services/ReportService.js:179
-msgid "Items that cannot be decrypted"
-msgstr "รายการที่ไม่สามารถทำการถอดรหัส"
-
-#: packages/lib/services/ReportService.js:180
-msgid ""
-"Joplin failed to decrypt these items multiple times, possibly because they "
-"are corrupted or too large. These items will remain on the device but Joplin "
-"will no longer attempt to decrypt them."
-msgstr ""
-
-#: packages/lib/services/ReportService.js:198
-#, fuzzy
-msgid "Attachments"
-msgstr "ไฟล์แนบ"
-
-#: packages/lib/services/ReportService.js:205
-msgid "Downloaded and decrypted"
-msgstr "ดาวน์โหลดและถอดรหัสแล้ว"
-
-#: packages/lib/services/ReportService.js:205
-#: packages/lib/services/ReportService.js:206
-#: packages/lib/services/ReportService.js:207
-#: packages/lib/services/ReportService.js:211
-#, javascript-format
-msgid "%s: %d"
-msgstr "%s: %d"
-
-#: packages/lib/services/ReportService.js:206
-msgid "Downloaded and encrypted"
-msgstr "ดาวน์โหลดและเข้ารหัสแล้ว"
-
-#: packages/lib/services/ReportService.js:207
-#, fuzzy
-msgid "Created locally"
-msgstr "สร้างเมื่อ"
-
-#: packages/lib/services/ReportService.js:218
-msgid "Attachments that could not be downloaded"
-msgstr "ไฟล์แนบไม่สามารถดาวน์โหลดได้"
-
-#: packages/lib/services/ReportService.js:222
-#, javascript-format
-msgid "%s (%s): %s"
-msgstr "%s (%s): %s"
-
-#: packages/lib/services/ReportService.js:233
-msgid "Sync status (synced items / total items)"
-msgstr "สถานะซิงค์ (รายการที่ซิงค์ไปแล้ว / รายการทั้งหมด)"
-
-#: packages/lib/services/ReportService.js:237
-#, javascript-format
-msgid "%s: %d/%d"
-msgstr "%s: %d/%d"
-
-#: packages/lib/services/ReportService.js:239
-#, javascript-format
-msgid "Total: %d/%d"
-msgstr "ทั้งหมด: %d/%d"
-
-#: packages/lib/services/ReportService.js:241
-#, javascript-format
-msgid "Conflicted: %d"
-msgstr ""
-
-#: packages/lib/services/ReportService.js:242
-#, javascript-format
-msgid "To delete: %d"
-msgstr ""
-
-#: packages/lib/services/ReportService.js:244
-msgid "Folders"
-msgstr "โฟลเดอร์"
-
-#: packages/lib/services/ReportService.js:250
-#, javascript-format
-msgid "%s: %d notes"
-msgstr "%s: %d บันทึก"
-
-#: packages/lib/services/ReportService.js:255
-msgid "Coming alarms"
-msgstr ""
-
-#: packages/lib/services/ReportService.js:259
-#, fuzzy, javascript-format
-msgid "On %s: %s"
-msgstr "เมื่อ %s: %s"
-
-#: packages/lib/services/RevisionService.js:214
-#, fuzzy
-msgid "Restored Notes"
-msgstr "กู้คืนบันทึก"
-
-#: packages/lib/services/RevisionService.js:238
-#, javascript-format
-msgid "The note \"%s\" has been successfully restored to the notebook \"%s\"."
-msgstr ""
-
-#: packages/lib/services/interop/InteropService.js:48
-#: packages/lib/services/interop/InteropService.js:57
-msgid "Joplin Export File"
-msgstr "ไฟล์ส่งออก Joplin"
-
-#: packages/lib/services/interop/InteropService.js:50
-#: packages/lib/services/interop/InteropService.js:58
-msgid "Joplin Export Directory"
-msgstr "ไดเรกทอรี่ส่งออก Joplin"
-
-#: packages/lib/services/interop/InteropService.js:51
-msgid "Evernote Export File (as Markdown)"
-msgstr "ไฟล์ส่งออก Evernote (เป็น Markdown)"
-
-#: packages/lib/services/interop/InteropService.js:52
-msgid "Evernote Export File (as HTML)"
-msgstr "ไฟล์ส่งออก Evernote (เป็น HTML)"
-
-#: packages/lib/services/interop/InteropService.js:60
-msgid "HTML File"
-msgstr "ไฟล์ HTML"
-
-#: packages/lib/services/interop/InteropService.js:61
-msgid "HTML Directory"
-msgstr "ไดเรกทอรี่ HTML"
-
-#: packages/lib/services/interop/InteropService.js:127
-#, fuzzy, javascript-format
-msgid "Cannot load \"%s\" module for format \"%s\" and output \"%s\""
-msgstr "ไม่สามารถโหลดโมดูล “%s” สำหรับฟอร์แมต “%s”"
-
-#: packages/lib/services/interop/InteropService.js:150
-#, fuzzy, javascript-format
-msgid "Cannot load \"%s\" module for format \"%s\" and target \"%s\""
-msgstr "ไม่สามารถโหลดโมดูล “%s” สำหรับฟอร์แมต “%s”"
-
-#: packages/lib/services/interop/InteropService.js:199
-#, javascript-format
-msgid "Please specify import format for %s"
-msgstr ""
-
-#: packages/lib/services/interop/InteropService_Exporter_Jex.js:43
-#, fuzzy
-msgid "There is no data to export."
-msgstr "ไม่มีข้อมูลที่จะส่งออก"
-
-#: packages/lib/services/interop/InteropService_Importer_Md.js:46
-#, fuzzy
-msgid "Please specify the notebook where the notes should be imported to."
-msgstr "โปรดระบุสมุดบันทึกสำหรับทำการนำเข้าบันทึก"
-
-#: packages/lib/services/interop/types.js:23
-msgid "File"
-msgstr "ไฟล์"
-
-#: packages/lib/services/interop/types.js:23
-msgid "Directory"
-msgstr "ไดเรกทอรี่"
-
-#: packages/lib/services/spellChecker/SpellCheckerService.js:107
-msgid "No suggestions"
-msgstr ""
-
-#: packages/lib/services/spellChecker/SpellCheckerService.js:114
-msgid "Add to dictionary"
-msgstr ""
-
-#: packages/lib/services/spellChecker/SpellCheckerService.js:153
-msgid "Use spell checker"
-msgstr ""
-
-#: packages/lib/services/spellChecker/SpellCheckerService.js:173
-#, fuzzy
-msgid "Change language"
-msgstr "ภาษา"
-
-#: packages/lib/shim-init-node.js:231
+#: packages/lib/shim-init-node.js:230
 #, javascript-format
 msgid "Cannot access %s"
 msgstr "ไม่สามารถเข้าถึง %s"
-
-#: packages/lib/versionInfo.js:10
-#, fuzzy, javascript-format
-msgid "Revision: %s (%s)"
-msgstr "Revision: %s (%s)"
-
-#: packages/lib/versionInfo.js:22
-#, javascript-format
-msgid "%s %s (%s, %s)"
-msgstr "%s %s (%s, %s)"
-
-#: packages/lib/versionInfo.js:24
-#, javascript-format
-msgid "Client ID: %s"
-msgstr "Client ID: %s"
-
-#: packages/lib/versionInfo.js:25
-#, javascript-format
-msgid "Sync Version: %s"
-msgstr "ซิงค์เวอร์ชั่น: %s"
-
-#: packages/lib/versionInfo.js:26
-#, javascript-format
-msgid "Profile Version: %s"
-msgstr "เวอร์ชั่นโปรไฟล์: %s"
-
-#: packages/lib/versionInfo.js:27
-#, javascript-format
-msgid "Keychain Supported: %s"
-msgstr ""
 
 #: packages/server/dist/middleware/notificationHandler.js:29
 #, javascript-format
@@ -4274,23 +3107,590 @@ msgid ""
 "now](%s)"
 msgstr ""
 
-#: packages/server/dist/models/UserModel.js:199
-#: packages/server/dist/models/UserModel.js:208
+#: packages/server/dist/models/UserModel.js:204
+#: packages/server/dist/models/UserModel.js:213
 #, fuzzy
 msgid "attachment"
 msgstr "ไฟล์แนบ"
 
-#: packages/server/dist/models/UserModel.js:199
+#: packages/server/dist/models/UserModel.js:204
 #, javascript-format
 msgid "Cannot save %s \"%s\" because it is larger than the allowed limit (%s)"
 msgstr ""
 
-#: packages/server/dist/models/UserModel.js:208
+#: packages/server/dist/models/UserModel.js:213
 #, javascript-format
 msgid ""
 "Cannot save %s \"%s\" because it would go over the total allowed size (%s) "
 "for this account"
 msgstr ""
+
+#~ msgid "Source"
+#~ msgstr "ต้นฉบับ"
+
+#, fuzzy
+#~ msgid "Password OK"
+#~ msgstr "รหัสผ่าน"
+
+#, fuzzy
+#~ msgid "Enter your master password"
+#~ msgstr "ตั้งรหัสผ่าน"
+
+#~ msgid "Delete these notes?"
+#~ msgstr "ลบบันทึกเหล่านี้?"
+
+#, fuzzy
+#~ msgid "Joplin Cloud"
+#~ msgstr "Joplin Forum"
+
+#, fuzzy
+#~ msgid "Joplin Server"
+#~ msgstr "เว็บไซต์ของ Joplin"
+
+#~ msgid "OneDrive"
+#~ msgstr "OneDrive"
+
+#~ msgid "Cancelling..."
+#~ msgstr "กำลังยกเลิก..."
+
+#, fuzzy, javascript-format
+#~ msgid "Completed: %s (%s)"
+#~ msgstr "เสร็จสิ้นเมื่อ: %s"
+
+#, javascript-format
+#~ msgid "Last error: %s"
+#~ msgstr "ข้อผิดพลาดล่าสุด: %s"
+
+#, fuzzy
+#~ msgid "Idle"
+#~ msgstr "ว่าง"
+
+#~ msgid "In progress"
+#~ msgstr "กำลังกำเนินการ"
+
+#, javascript-format
+#~ msgid "Decrypted items: %s / %s"
+#~ msgstr "รายการที่ถูกถอดรหัส: %s / %s"
+
+#~ msgid "Encrypted"
+#~ msgstr "เข้ารหัสแล้ว"
+
+#, fuzzy
+#~ msgid "Encrypted items cannot be modified"
+#~ msgstr "รายการที่เข้ารหัสแล้วไม่สามารถแก้ไขได้"
+
+#~ msgid "Conflicts"
+#~ msgstr "ขัดแย้ง"
+
+#, fuzzy
+#~ msgid "Cannot move notebook to this location"
+#~ msgstr "ไม่สามารถย้ายสมุดบันทึกมาที่ตำแหน่งนี้"
+
+#, fuzzy, javascript-format
+#~ msgid "Notebooks cannot be named \"%s\", which is a reserved title."
+#~ msgstr "สมุดบันทึกไม่สามารถใช้ชื่อ “%s” เพราะมีคำสงวน"
+
+#~ msgid "Not downloaded"
+#~ msgstr "ยังไม่ได้ดาวน์โหลด"
+
+#~ msgid "Downloading"
+#~ msgstr "กำลังดาวน์โหลด"
+
+#~ msgid "Downloaded"
+#~ msgstr "ดาวน์โหลดแล้ว"
+
+#~ msgid "Error"
+#~ msgstr "ผิดพลาด"
+
+#, fuzzy
+#~ msgid "Conflicts (attachments)"
+#~ msgstr "ไฟล์แนบ"
+
+#, fuzzy, javascript-format
+#~ msgid "Attachment conflict: \"%s\""
+#~ msgstr "ไฟล์แนบ"
+
+#, fuzzy
+#~ msgid "yes"
+#~ msgstr "ใช่"
+
+#, fuzzy
+#~ msgid "no"
+#~ msgstr "n"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "สว่าง"
+
+#, fuzzy
+#~ msgid "Dark"
+#~ msgstr "มืด"
+
+#~ msgid "Dracula"
+#~ msgstr "Dracula"
+
+#~ msgid "Solarised Light"
+#~ msgstr "Solarised Light"
+
+#~ msgid "Solarised Dark"
+#~ msgstr "Solarised Dark"
+
+#~ msgid "Nord"
+#~ msgstr "Nord"
+
+#~ msgid "OLED Dark"
+#~ msgstr "OLED Dark"
+
+#~ msgid "Synchronisation target"
+#~ msgstr "จุดหมายการซิงโครไนซ์"
+
+#~ msgid "Nextcloud WebDAV URL"
+#~ msgstr "Nextcloud WebDAV URL"
+
+#~ msgid "Nextcloud username"
+#~ msgstr "ชื่อผู้ใช้ Nextcloud"
+
+#~ msgid "Nextcloud password"
+#~ msgstr "รหัสผ่าน Nextcloud"
+
+#~ msgid "WebDAV URL"
+#~ msgstr "WebDAV URL"
+
+#~ msgid "WebDAV username"
+#~ msgstr "ชื่อผู้ใช้ WebDAV"
+
+#~ msgid "WebDAV password"
+#~ msgstr "รหัสผ่าน WebDAV"
+
+#, fuzzy
+#~ msgid "Joplin Server email"
+#~ msgstr "เว็บไซต์ของ Joplin"
+
+#, fuzzy
+#~ msgid "Joplin Server password"
+#~ msgstr "ตั้งรหัสผ่าน"
+
+#, fuzzy
+#~ msgid "Joplin Cloud email"
+#~ msgstr "เว็บไซต์ของ Joplin"
+
+#, fuzzy
+#~ msgid "Joplin Cloud password"
+#~ msgstr "ตั้งรหัสผ่าน"
+
+#, fuzzy
+#~ msgid "Always"
+#~ msgstr "ตลอดเวลา"
+
+#~ msgid "Manual"
+#~ msgstr "ทำด้วยตนเอง"
+
+#~ msgid "Auto"
+#~ msgstr "อัตโนมัติ"
+
+#~ msgid "Language"
+#~ msgstr "ภาษา"
+
+#~ msgid "Date format"
+#~ msgstr "รูปแบบวันที่"
+
+#~ msgid "Time format"
+#~ msgstr "รูปแบบเวลา"
+
+#~ msgid "Theme"
+#~ msgstr "ธีม"
+
+#, fuzzy
+#~ msgid "Show note counts"
+#~ msgstr "แสดงจำนวนบันทึก"
+
+#~ msgid "Split View"
+#~ msgstr "มุมมองแบบแบ่งครึ่ง"
+
+#, javascript-format
+#~ msgid "%s / %s / %s"
+#~ msgstr "%s / %s / %s"
+
+#, javascript-format
+#~ msgid "%s / %s"
+#~ msgstr "%s / %s"
+
+#, fuzzy
+#~ msgid "Uncompleted to-dos on top"
+#~ msgstr "to-do ที่ยังไม่เสร็จไว้บนสุด"
+
+#, fuzzy
+#~ msgid "Show completed to-dos"
+#~ msgstr "แสดง to-do ที่เสร็จแล้ว"
+
+#, fuzzy
+#~ msgid "Auto-pair braces, parenthesis, quotations, etc."
+#~ msgstr "จับคู่อัตโนมัติ {}, (), \"\", ฯลฯ"
+
+#, fuzzy
+#~ msgid "Reverse sort order"
+#~ msgstr "จัดเรียงย้อนกลับ"
+
+#~ msgid "Sort notebooks by"
+#~ msgstr "จัดเรียงสมุดบันทึกโดย"
+
+#, fuzzy
+#~ msgid "Save geo-location with notes"
+#~ msgstr "บันทึกตำหน่งภูมิศาสตร์"
+
+#~ msgid "When creating a new to-do:"
+#~ msgstr "เมื่อสร้าง to-do ใหม่:"
+
+#, fuzzy
+#~ msgid "Focus title"
+#~ msgstr "โฟกัสที่ชื่อเรื่อง"
+
+#, fuzzy
+#~ msgid "Focus body"
+#~ msgstr "โฟกัสที่เนื้อเรื่อง"
+
+#, fuzzy
+#~ msgid "When creating a new note:"
+#~ msgstr "เมื่อสร้างบันทึกใหม่:"
+
+#~ msgid "Enable soft breaks"
+#~ msgstr "เปิดใช้งาน Soft Break"
+
+#, fuzzy
+#~ msgid "Enable typographer support"
+#~ msgstr "เปิดใช้งานการรองรับ Typographer"
+
+#, fuzzy
+#~ msgid "Enable Linkify"
+#~ msgstr "เปิดใช้ประวัติบันทึกย้อนหลัง"
+
+#~ msgid "Enable math expressions"
+#~ msgstr "เปิดใช้งาน Math Expressions"
+
+#~ msgid "Enable Fountain syntax support"
+#~ msgstr "เปิดใช้งานการรองรับ Fountain syntax"
+
+#~ msgid "Enable Mermaid diagrams support"
+#~ msgstr "เปิดใช้งานการรองรับ Mermaid diagram"
+
+#, fuzzy
+#~ msgid "Enable audio player"
+#~ msgstr "เปิดใช้งาน Markdown Emoji"
+
+#~ msgid "Enable ==mark== syntax"
+#~ msgstr "เปิดใช้งาน ==mark== syntax"
+
+#~ msgid "Enable footnotes"
+#~ msgstr "เปิดใช้งาน Footnotes"
+
+#~ msgid "Enable table of contents extension"
+#~ msgstr "เปิดใช้งานส่วนเสริมสารบัญ"
+
+#~ msgid "Enable ~sub~ syntax"
+#~ msgstr "เปิดใช้งาน ~sub~ syntax"
+
+#~ msgid "Enable ^sup^ syntax"
+#~ msgstr "เปิดใช้งาน ^sup^ syntax"
+
+#~ msgid "Enable deflist syntax"
+#~ msgstr "เปิดใช้งาน deflist syntax"
+
+#~ msgid "Enable abbreviation syntax"
+#~ msgstr "เปิดใช้งาน abbreviation syntax"
+
+#~ msgid "Enable markdown emoji"
+#~ msgstr "เปิดใช้งาน Markdown Emoji"
+
+#~ msgid "Enable ++insert++ syntax"
+#~ msgstr "เปิดใช้งาน ++insert++syntax"
+
+#~ msgid "Enable multimarkdown table extension"
+#~ msgstr "เปิดใช้งานส่วนเสริมตาราง Multimarkdown"
+
+#~ msgid "Show tray icon"
+#~ msgstr "แสดงไอคอนใน System tray"
+
+#, fuzzy
+#~ msgid "Note: Does not work in all desktop environments."
+#~ msgstr "หมายเหตุ: ทำงานได้กับบาง Desktop Environment เท่านั้น"
+
+#~ msgid "Start application minimised in the tray icon"
+#~ msgstr "เริ่มต้นแอปพลิเคชั่นโดยย่อไว้ที่ไอคอน System tray"
+
+#~ msgid "Editor font size"
+#~ msgstr "ขนาดตัวอักษรของตัวแก้ไข"
+
+#~ msgid "Editor font"
+#~ msgstr "แบบตัวอักษรของตัวแก้ไข"
+
+#~ msgid "Default"
+#~ msgstr "ค่าเริ่มต้น"
+
+#~ msgid "Editor font family"
+#~ msgstr "ตระกูลของแบบตัวอักษรของตัวแก้ไข"
+
+#, fuzzy
+#~ msgid "Editor monospace font family"
+#~ msgstr "ตระกูลของแบบตัวอักษรของตัวแก้ไข"
+
+#, fuzzy
+#~ msgid "Custom stylesheet for rendered Markdown"
+#~ msgstr "Stylesheet แบบกำหนดเอง สำหรับ Joplin"
+
+#, fuzzy
+#~ msgid "Custom stylesheet for Joplin-wide app styles"
+#~ msgstr "Stylesheet แบบกำหนดเอง สำหรับ Joplin"
+
+#~ msgid "Automatically update the application"
+#~ msgstr "อัพเดทแอปพลิเคชั่นอัตโนมัติ"
+
+#~ msgid "Synchronisation interval"
+#~ msgstr "ความถี่ในการซิงโครไนซ์"
+
+#, javascript-format
+#~ msgid "%d minutes"
+#~ msgstr "%d นาที"
+
+#, javascript-format
+#~ msgid "%d hour"
+#~ msgstr "%d ชั่วโมง"
+
+#, javascript-format
+#~ msgid "%d hours"
+#~ msgstr "%d ชั่วโมง"
+
+#~ msgid "Page size for PDF export"
+#~ msgstr "ขนาดของหน้า สำหรับการส่งออก PDF"
+
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgid "Letter"
+#~ msgstr "Letter"
+
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgid "Tabloid"
+#~ msgstr "Tabloid"
+
+#~ msgid "Legal"
+#~ msgstr "Legal"
+
+#, fuzzy
+#~ msgid "Page orientation for PDF export"
+#~ msgstr "การจัดวางหน้า สำหรับการส่งออก PDF"
+
+#~ msgid "Portrait"
+#~ msgstr "แนวตั้ง"
+
+#~ msgid "Landscape"
+#~ msgstr "แนวนอน"
+
+#~ msgid "Keyboard Mode"
+#~ msgstr "โหมดของคีย์บอร์ด"
+
+#~ msgid "Emacs"
+#~ msgstr "Emacs"
+
+#~ msgid "Vim"
+#~ msgstr "Vim"
+
+#~ msgid "Custom TLS certificates"
+#~ msgstr "TLS certificate แบบกำหนดเอง"
+
+#~ msgid "Ignore TLS certificate errors"
+#~ msgstr "เพิกเฉยข้อผิดพลาด TLS certificate"
+
+#~ msgid ""
+#~ "Specify the port that should be used by the API server. If not set, a "
+#~ "default will be used."
+#~ msgstr "ระบุพอร์ตที่จะใช้โดยเซิร์ฟเวอร์ API ถ้าไม่ระบุ จะใช้ค่าเริ่มต้น"
+
+#~ msgid "Enable note history"
+#~ msgstr "เปิดใช้ประวัติบันทึกย้อนหลัง"
+
+#~ msgid "days"
+#~ msgstr "วัน"
+
+#, javascript-format
+#~ msgid "%d days"
+#~ msgstr "%d วัน"
+
+#, fuzzy
+#~ msgid "Keep note history for"
+#~ msgstr "เก็บประวัติบันทึกย้อนหลังเป็นเวลา"
+
+#, fuzzy, javascript-format
+#~ msgid "Invalid option value: \"%s\". Possible values are: %s."
+#~ msgstr "ค่าของตัวเลือกไม่ถูกต้อง: \"%s\" ค่าที่เป็นไปได้คือ: %s."
+
+#~ msgid "Synchronisation"
+#~ msgstr "การซิงโครไนซ์"
+
+#, fuzzy
+#~ msgid "Appearance"
+#~ msgstr "รูปร่างหน้าตา"
+
+#~ msgid "Note"
+#~ msgstr "บันทึก"
+
+#~ msgid "Markdown"
+#~ msgstr "Markdown"
+
+#~ msgid "Application"
+#~ msgstr "แอปพลิเคชัน"
+
+#~ msgid "Web Clipper"
+#~ msgstr "Web Clipper"
+
+#, fuzzy
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "โหมดของคีย์บอร์ด"
+
+#, fuzzy, javascript-format
+#~ msgid "Notes and settings are stored in: %s"
+#~ msgstr "บันทึก และ การตั้งค่า จะถูกเก็บไว้ใน: %s"
+
+#, javascript-format
+#~ msgid "The tag \"%s\" already exists. Please choose a different name."
+#~ msgstr "แท็ก “%s” มีอยู่แล้ว โปรดใช้ชื่ออื่น"
+
+#, fuzzy, javascript-format
+#~ msgid "Invalid %s: %s."
+#~ msgstr "คำสั่งไม่ถูกต้อง: \"%s\""
+
+#~ msgid "Items that cannot be synchronised"
+#~ msgstr "รายการที่ไม่สามารถทำการซิงโครไนซ์"
+
+#, fuzzy, javascript-format
+#~ msgid "%s (%s) could not be uploaded: %s"
+#~ msgstr "%s (%s) ไม่สามารถอัพโหลด: %s"
+
+#, fuzzy, javascript-format
+#~ msgid "Item \"%s\" could not be downloaded: %s"
+#~ msgstr "รายการ “%s” ไม่สามารถดาวน์โหลด: %s"
+
+#~ msgid "Items that cannot be decrypted"
+#~ msgstr "รายการที่ไม่สามารถทำการถอดรหัส"
+
+#, fuzzy
+#~ msgid "Attachments"
+#~ msgstr "ไฟล์แนบ"
+
+#~ msgid "Downloaded and decrypted"
+#~ msgstr "ดาวน์โหลดและถอดรหัสแล้ว"
+
+#, javascript-format
+#~ msgid "%s: %d"
+#~ msgstr "%s: %d"
+
+#~ msgid "Downloaded and encrypted"
+#~ msgstr "ดาวน์โหลดและเข้ารหัสแล้ว"
+
+#, fuzzy
+#~ msgid "Created locally"
+#~ msgstr "สร้างเมื่อ"
+
+#~ msgid "Attachments that could not be downloaded"
+#~ msgstr "ไฟล์แนบไม่สามารถดาวน์โหลดได้"
+
+#, javascript-format
+#~ msgid "%s (%s): %s"
+#~ msgstr "%s (%s): %s"
+
+#~ msgid "Sync status (synced items / total items)"
+#~ msgstr "สถานะซิงค์ (รายการที่ซิงค์ไปแล้ว / รายการทั้งหมด)"
+
+#, javascript-format
+#~ msgid "%s: %d/%d"
+#~ msgstr "%s: %d/%d"
+
+#, javascript-format
+#~ msgid "Total: %d/%d"
+#~ msgstr "ทั้งหมด: %d/%d"
+
+#~ msgid "Folders"
+#~ msgstr "โฟลเดอร์"
+
+#, javascript-format
+#~ msgid "%s: %d notes"
+#~ msgstr "%s: %d บันทึก"
+
+#, fuzzy, javascript-format
+#~ msgid "On %s: %s"
+#~ msgstr "เมื่อ %s: %s"
+
+#, fuzzy
+#~ msgid "Restored Notes"
+#~ msgstr "กู้คืนบันทึก"
+
+#~ msgid "Joplin Export File"
+#~ msgstr "ไฟล์ส่งออก Joplin"
+
+#~ msgid "Joplin Export Directory"
+#~ msgstr "ไดเรกทอรี่ส่งออก Joplin"
+
+#~ msgid "Evernote Export File (as Markdown)"
+#~ msgstr "ไฟล์ส่งออก Evernote (เป็น Markdown)"
+
+#~ msgid "Evernote Export File (as HTML)"
+#~ msgstr "ไฟล์ส่งออก Evernote (เป็น HTML)"
+
+#~ msgid "HTML File"
+#~ msgstr "ไฟล์ HTML"
+
+#~ msgid "HTML Directory"
+#~ msgstr "ไดเรกทอรี่ HTML"
+
+#, fuzzy, javascript-format
+#~ msgid "Cannot load \"%s\" module for format \"%s\" and output \"%s\""
+#~ msgstr "ไม่สามารถโหลดโมดูล “%s” สำหรับฟอร์แมต “%s”"
+
+#, fuzzy, javascript-format
+#~ msgid "Cannot load \"%s\" module for format \"%s\" and target \"%s\""
+#~ msgstr "ไม่สามารถโหลดโมดูล “%s” สำหรับฟอร์แมต “%s”"
+
+#, fuzzy
+#~ msgid "There is no data to export."
+#~ msgstr "ไม่มีข้อมูลที่จะส่งออก"
+
+#, fuzzy
+#~ msgid "Please specify the notebook where the notes should be imported to."
+#~ msgstr "โปรดระบุสมุดบันทึกสำหรับทำการนำเข้าบันทึก"
+
+#~ msgid "File"
+#~ msgstr "ไฟล์"
+
+#~ msgid "Directory"
+#~ msgstr "ไดเรกทอรี่"
+
+#, fuzzy
+#~ msgid "Change language"
+#~ msgstr "ภาษา"
+
+#, fuzzy, javascript-format
+#~ msgid "Revision: %s (%s)"
+#~ msgstr "Revision: %s (%s)"
+
+#, javascript-format
+#~ msgid "%s %s (%s, %s)"
+#~ msgstr "%s %s (%s, %s)"
+
+#, javascript-format
+#~ msgid "Client ID: %s"
+#~ msgstr "Client ID: %s"
+
+#, javascript-format
+#~ msgid "Sync Version: %s"
+#~ msgstr "ซิงค์เวอร์ชั่น: %s"
+
+#, javascript-format
+#~ msgid "Profile Version: %s"
+#~ msgstr "เวอร์ชั่นโปรไฟล์: %s"
 
 #, javascript-format
 #~ msgid "%s %s (%s)"
@@ -4382,10 +3782,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Click to stop external editing"
 #~ msgstr "หยุดการแก้ไขภายนอก"
-
-#, fuzzy
-#~ msgid "Content Properties"
-#~ msgstr "คุณสมบัติของบันทึก"
 
 #~ msgid "Please create a notebook first."
 #~ msgstr "โปรดสร้างสมุดบันทึกก่อน"
