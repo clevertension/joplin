@@ -39,17 +39,12 @@ import { MarkupToHtmlOptions } from '../../utils/useMarkupToHtml';
 const menuUtils = new MenuUtils(CommandService.instance());
 const SummaryPrefix = '<details><summary><mark><font color=darkred>..........</font></mark></summary>';
 
-function escapeXml(unsafe: String) {
-	return unsafe.replace(/[<>&'"]/g, c => {
-		switch (c) {
-		case '<': return '&lt;';
-		case '>': return '&gt;';
-		case '&': return '&amp;';
-		case '\'': return '&apos;';
-		case '"': return '&quot;';
-		}
-		return c;
-	});
+function escapeXml(unsafe: String): String {
+	return unsafe.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&apos;');
 }
 
 function markupRenderOptions(override: MarkupToHtmlOptions = null): MarkupToHtmlOptions {
