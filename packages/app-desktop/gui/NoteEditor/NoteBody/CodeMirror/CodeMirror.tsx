@@ -199,7 +199,7 @@ function CodeMirror(props: NoteBodyEditorProps, ref: any) {
 							const selections = editorRef.current.getSelections();
 							if (selections.length > 0) {
 								const content = escapeXml(selections[0]);
-								if (content) wrapSelectionWithStrings(SummaryPrefix, `${content}</details>`);
+								if (content) editorRef.current.replaceSelection(`${SummaryPrefix}${content}</details>`);
 							}
 						},
 						textLink: async () => {
